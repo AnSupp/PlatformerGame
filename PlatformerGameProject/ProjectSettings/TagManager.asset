@@ -44,9 +44,12 @@ TagManager:
   - name: Objects
     uniqueID: 607070337
     locked: 0
-  - name: Grass
-    uniqueID: 2206102737
+  - name: Entity
+    uniqueID: 1853016681
     locked: 0
   - name: Ground
     uniqueID: 3160382743
+    locked: 0
+  - name: Grass
+    uniqueID: 2206102737
     locked: 0
