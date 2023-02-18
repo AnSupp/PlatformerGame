@@ -4,43 +4,43 @@ TextureImporter:
   internalIDToNameTable:
   - first:
       213: 3627241991512469009
-    second: Fire_Warrior-Sheet_0
+    second: Attack1-1_Fire_Warrior
   - first:
       213: 8626908329321490321
-    second: Fire_Warrior-Sheet_1
+    second: Attack1-2_Fire_Warrior
   - first:
       213: -4165279092682581564
-    second: Fire_Warrior-Sheet_2
+    second: Attack1-3_Fire_Warrior
   - first:
       213: 6920959983148327855
-    second: Fire_Warrior-Sheet_3
+    second: Attack1-4_Fire_Warrior
   - first:
       213: -5994095199006235229
-    second: Fire_Warrior-Sheet_4
+    second: Attack2-1_Fire_Warrior
   - first:
       213: 5614976468819159999
-    second: Fire_Warrior-Sheet_5
+    second: Attack2-2_Fire_Warrior
   - first:
       213: -9127355577728069065
-    second: Fire_Warrior-Sheet_6
+    second: Attack2-3_Fire_Warrior
   - first:
       213: -6295864149249327340
-    second: Fire_Warrior-Sheet_7
+    second: Attack2-4_Fire_Warrior
   - first:
       213: 583745830334649857
-    second: Fire_Warrior-Sheet_8
+    second: Attack3-1_Fire_Warrior
   - first:
       213: 2851127956474232898
-    second: Fire_Warrior-Sheet_9
+    second: Attack3-2_Fire_Warrior
   - first:
       213: 6240010477179987371
-    second: Fire_Warrior-Sheet_10
+    second: Attack3-3_Fire_Warrior
   - first:
       213: 7503086568268765698
-    second: Fire_Warrior-Sheet_11
+    second: Attack3-4_Fire_Warrior
   - first:
       213: -7421362610356496405
-    second: Fire_Warrior-Sheet_12
+    second: Attack3-5_Fire_Warrior
   - first:
       213: 842801026430367057
     second: Fire_Warrior-Sheet_13
@@ -91,49 +91,49 @@ TextureImporter:
     second: Fire_Warrior-Sheet_28
   - first:
       213: 6819701981571472274
-    second: Fire_Warrior-Sheet_29
+    second: Death-1_Fire_Warrior
   - first:
       213: -2535578925981375746
-    second: Fire_Warrior-Sheet_30
+    second: Death-2_Fire_Warrior
   - first:
       213: 1785533537795598327
-    second: Fire_Warrior-Sheet_31
+    second: Death-3_Fire_Warrior
   - first:
       213: -7779158389364902715
-    second: Fire_Warrior-Sheet_32
+    second: Death-4_Fire_Warrior
   - first:
       213: 73243373965435863
-    second: Fire_Warrior-Sheet_33
+    second: Death-5_Fire_Warrior
   - first:
       213: -2565885078505838479
-    second: Fire_Warrior-Sheet_34
+    second: Death-6_Fire_Warrior
   - first:
       213: 6406805970185447950
-    second: Fire_Warrior-Sheet_35
+    second: Death-7_Fire_Warrior
   - first:
       213: 2499892271409639995
-    second: Fire_Warrior-Sheet_36
+    second: Death-8_Fire_Warrior
   - first:
       213: -2570899924413724537
-    second: Fire_Warrior-Sheet_37
+    second: Death-9_Fire_Warrior
   - first:
       213: 3652556559556898778
-    second: Fire_Warrior-Sheet_38
+    second: Death-10_Fire_Warrior
   - first:
       213: 753781663453873231
-    second: Fire_Warrior-Sheet_39
+    second: Death-11_Fire_Warrior
   - first:
       213: -8769741661156224229
-    second: Fire_Warrior-Sheet_40
+    second: Damage-1_Fire_Warrior
   - first:
       213: -3238490404153670367
-    second: Fire_Warrior-Sheet_41
+    second: Damage-2_Fire_Warrior
   - first:
       213: -4394687716509315986
-    second: Fire_Warrior-Sheet_42
+    second: Damage-3_Fire_Warrior
   - first:
       213: 400056186297513989
-    second: Fire_Warrior-Sheet_43
+    second: Damage-4_Fire_Warrior
   - first:
       213: -3742350316595844660
     second: Idle-1_Fire_Warrior
@@ -274,28 +274,28 @@ TextureImporter:
     second: Fire_Warrior-Sheet_89
   - first:
       213: 6269430263117083196
-    second: Fire_Warrior-Sheet_90
+    second: Run-1_Fire_Warrior
   - first:
       213: -430816950504511829
-    second: Fire_Warrior-Sheet_91
+    second: Run-2_Fire_Warrior
   - first:
       213: 7432410515918485640
-    second: Fire_Warrior-Sheet_92
+    second: Run-3_Fire_Warrior
   - first:
       213: -3079777504990003591
-    second: Fire_Warrior-Sheet_93
+    second: Run-4_Fire_Warrior
   - first:
       213: 6611086257241731794
-    second: Fire_Warrior-Sheet_94
+    second: Run-5_Fire_Warrior
   - first:
       213: -391328314994909705
-    second: Fire_Warrior-Sheet_95
+    second: Run-6_Fire_Warrior
   - first:
       213: -8387537358459062079
-    second: Fire_Warrior-Sheet_96
+    second: Run-7_Fire_Warrior
   - first:
       213: 8094969919274172217
-    second: Fire_Warrior-Sheet_97
+    second: Run-8_Fire_Warrior
   - first:
       213: 3865454687685515317
     second: Fire_Warrior-Sheet_98
@@ -515,16 +515,16 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Fire_Warrior-Sheet_0
+      name: Attack1-1_Fire_Warrior
       rect:
         serializedVersion: 2
         x: 18
         y: 1696
-        width: 50
+        width: 88
         height: 47
       alignment: 7
       pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 0, y: 0, z: 38, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -536,7 +536,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Fire_Warrior-Sheet_1
+      name: Attack1-2_Fire_Warrior
       rect:
         serializedVersion: 2
         x: 157
@@ -557,16 +557,16 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Fire_Warrior-Sheet_2
+      name: Attack1-3_Fire_Warrior
       rect:
         serializedVersion: 2
-        x: 277
+        x: 276
         y: 1696
-        width: 43
+        width: 44
         height: 43
       alignment: 7
       pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 1, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -578,16 +578,16 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Fire_Warrior-Sheet_3
+      name: Attack1-4_Fire_Warrior
       rect:
         serializedVersion: 2
         x: 393
         y: 1696
-        width: 27
+        width: 40
         height: 43
       alignment: 7
       pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 0, y: 0, z: 13, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -599,7 +599,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Fire_Warrior-Sheet_4
+      name: Attack2-1_Fire_Warrior
       rect:
         serializedVersion: 2
         x: 30
@@ -620,7 +620,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Fire_Warrior-Sheet_5
+      name: Attack2-2_Fire_Warrior
       rect:
         serializedVersion: 2
         x: 159
@@ -641,7 +641,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Fire_Warrior-Sheet_6
+      name: Attack2-3_Fire_Warrior
       rect:
         serializedVersion: 2
         x: 278
@@ -662,7 +662,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Fire_Warrior-Sheet_7
+      name: Attack2-4_Fire_Warrior
       rect:
         serializedVersion: 2
         x: 393
@@ -683,10 +683,10 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Fire_Warrior-Sheet_8
+      name: Attack3-1_Fire_Warrior
       rect:
         serializedVersion: 2
-        x: 48
+        x: 49
         y: 1536
         width: 39
         height: 42
@@ -704,7 +704,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Fire_Warrior-Sheet_9
+      name: Attack3-2_Fire_Warrior
       rect:
         serializedVersion: 2
         x: 159
@@ -725,7 +725,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Fire_Warrior-Sheet_10
+      name: Attack3-3_Fire_Warrior
       rect:
         serializedVersion: 2
         x: 277
@@ -746,7 +746,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Fire_Warrior-Sheet_11
+      name: Attack3-4_Fire_Warrior
       rect:
         serializedVersion: 2
         x: 393
@@ -767,7 +767,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Fire_Warrior-Sheet_12
+      name: Attack3-5_Fire_Warrior
       rect:
         serializedVersion: 2
         x: 508
@@ -1124,7 +1124,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Fire_Warrior-Sheet_29
+      name: Death-1_Fire_Warrior
       rect:
         serializedVersion: 2
         x: 45
@@ -1145,16 +1145,16 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Fire_Warrior-Sheet_30
+      name: Death-2_Fire_Warrior
       rect:
         serializedVersion: 2
-        x: 161
+        x: 160
         y: 1216
-        width: 22
+        width: 23
         height: 44
       alignment: 7
       pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 1, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -1166,16 +1166,16 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Fire_Warrior-Sheet_31
+      name: Death-3_Fire_Warrior
       rect:
         serializedVersion: 2
         x: 271
         y: 1216
-        width: 25
+        width: 31
         height: 47
       alignment: 7
       pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 0, y: 0, z: 6, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -1187,16 +1187,16 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Fire_Warrior-Sheet_32
+      name: Death-4_Fire_Warrior
       rect:
         serializedVersion: 2
         x: 386
         y: 1216
-        width: 25
+        width: 31
         height: 46
       alignment: 7
       pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 0, y: 0, z: 6, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -1208,16 +1208,16 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Fire_Warrior-Sheet_33
+      name: Death-5_Fire_Warrior
       rect:
         serializedVersion: 2
         x: 501
         y: 1216
-        width: 28
+        width: 31
         height: 47
       alignment: 7
       pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 0, y: 0, z: 3, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -1229,7 +1229,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Fire_Warrior-Sheet_34
+      name: Death-6_Fire_Warrior
       rect:
         serializedVersion: 2
         x: 616
@@ -1250,7 +1250,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Fire_Warrior-Sheet_35
+      name: Death-7_Fire_Warrior
       rect:
         serializedVersion: 2
         x: 731
@@ -1271,16 +1271,16 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Fire_Warrior-Sheet_36
+      name: Death-8_Fire_Warrior
       rect:
         serializedVersion: 2
-        x: 846
+        x: 845
         y: 1216
-        width: 33
+        width: 34
         height: 34
       alignment: 7
       pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 1, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -1292,16 +1292,16 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Fire_Warrior-Sheet_37
+      name: Death-9_Fire_Warrior
       rect:
         serializedVersion: 2
-        x: 961
+        x: 940
         y: 1216
-        width: 54
+        width: 74
         height: 13
       alignment: 7
       pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 21, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -1313,16 +1313,16 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Fire_Warrior-Sheet_38
+      name: Death-10_Fire_Warrior
       rect:
         serializedVersion: 2
-        x: 1076
+        x: 1055
         y: 1216
-        width: 54
+        width: 74
         height: 9
       alignment: 7
       pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 21, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -1334,16 +1334,16 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Fire_Warrior-Sheet_39
+      name: Death-11_Fire_Warrior
       rect:
         serializedVersion: 2
-        x: 1191
+        x: 1170
         y: 1216
-        width: 54
+        width: 74
         height: 8
       alignment: 7
       pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 21, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -1355,7 +1355,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Fire_Warrior-Sheet_40
+      name: Damage-1_Fire_Warrior
       rect:
         serializedVersion: 2
         x: 45
@@ -1376,16 +1376,16 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Fire_Warrior-Sheet_41
+      name: Damage-2_Fire_Warrior
       rect:
         serializedVersion: 2
-        x: 161
+        x: 160
         y: 1136
-        width: 22
+        width: 23
         height: 44
       alignment: 7
       pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 1, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -1397,16 +1397,16 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Fire_Warrior-Sheet_42
+      name: Damage-3_Fire_Warrior
       rect:
         serializedVersion: 2
         x: 271
         y: 1136
-        width: 25
+        width: 31
         height: 47
       alignment: 7
       pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 0, y: 0, z: 6, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -1418,16 +1418,16 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Fire_Warrior-Sheet_43
+      name: Damage-4_Fire_Warrior
       rect:
         serializedVersion: 2
         x: 386
         y: 1136
-        width: 25
+        width: 31
         height: 46
       alignment: 7
       pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 0, y: 0, z: 6, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -1442,13 +1442,13 @@ TextureImporter:
       name: Idle-1_Fire_Warrior
       rect:
         serializedVersion: 2
-        x: 42
+        x: 41
         y: 1056
-        width: 27
+        width: 28
         height: 47
       alignment: 7
       pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 1, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -1463,13 +1463,13 @@ TextureImporter:
       name: Idle-2_Fire_Warrior
       rect:
         serializedVersion: 2
-        x: 157
+        x: 156
         y: 1056
-        width: 27
+        width: 28
         height: 46
       alignment: 7
       pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 1, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -1484,13 +1484,13 @@ TextureImporter:
       name: Idle-3_Fire_Warrior
       rect:
         serializedVersion: 2
-        x: 272
+        x: 271
         y: 1056
-        width: 27
+        width: 28
         height: 46
       alignment: 7
       pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 1, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -1568,13 +1568,13 @@ TextureImporter:
       name: Idle-7_Fire_Warrior
       rect:
         serializedVersion: 2
-        x: 732
+        x: 731
         y: 1056
-        width: 27
+        width: 28
         height: 46
       alignment: 7
       pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 1, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -1589,13 +1589,13 @@ TextureImporter:
       name: Idle-8_Fire_Warrior
       rect:
         serializedVersion: 2
-        x: 847
+        x: 846
         y: 1056
-        width: 27
+        width: 28
         height: 47
       alignment: 7
       pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 1, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -2405,7 +2405,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Fire_Warrior-Sheet_90
+      name: Run-1_Fire_Warrior
       rect:
         serializedVersion: 2
         x: 36
@@ -2426,16 +2426,16 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Fire_Warrior-Sheet_91
+      name: Run-2_Fire_Warrior
       rect:
         serializedVersion: 2
-        x: 151
+        x: 150
         y: 416
-        width: 38
+        width: 39
         height: 42
       alignment: 7
       pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 1, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -2447,16 +2447,16 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Fire_Warrior-Sheet_92
+      name: Run-3_Fire_Warrior
       rect:
         serializedVersion: 2
-        x: 268
+        x: 264
         y: 416
-        width: 35
+        width: 39
         height: 42
       alignment: 7
       pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 4, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -2468,16 +2468,16 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Fire_Warrior-Sheet_93
+      name: Run-4_Fire_Warrior
       rect:
         serializedVersion: 2
-        x: 380
+        x: 378
         y: 416
-        width: 37
+        width: 39
         height: 43
       alignment: 7
       pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 2, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -2489,16 +2489,16 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Fire_Warrior-Sheet_94
+      name: Run-5_Fire_Warrior
       rect:
         serializedVersion: 2
-        x: 494
+        x: 492
         y: 416
-        width: 37
+        width: 39
         height: 43
       alignment: 7
       pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 2, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -2510,16 +2510,16 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Fire_Warrior-Sheet_95
+      name: Run-6_Fire_Warrior
       rect:
         serializedVersion: 2
-        x: 610
+        x: 608
         y: 416
-        width: 37
+        width: 39
         height: 42
       alignment: 7
       pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 2, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -2531,16 +2531,16 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Fire_Warrior-Sheet_96
+      name: Run-7_Fire_Warrior
       rect:
         serializedVersion: 2
-        x: 728
+        x: 724
         y: 416
-        width: 35
+        width: 39
         height: 42
       alignment: 7
       pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 4, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -2552,16 +2552,16 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Fire_Warrior-Sheet_97
+      name: Run-8_Fire_Warrior
       rect:
         serializedVersion: 2
-        x: 841
+        x: 840
         y: 416
-        width: 38
+        width: 39
         height: 43
       alignment: 7
       pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 1, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
