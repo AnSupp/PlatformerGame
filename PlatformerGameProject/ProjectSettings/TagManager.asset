@@ -38,18 +38,18 @@ TagManager:
   - 
   - 
   m_SortingLayers:
-  - name: Default
-    uniqueID: 0
+  - name: CloseBackground
+    uniqueID: 4151263487
     locked: 0
-  - name: Objects
-    uniqueID: 607070337
-    locked: 0
-  - name: Entity
-    uniqueID: 1853016681
+  - name: BackgroungProps
+    uniqueID: 2131266195
     locked: 0
   - name: Ground
-    uniqueID: 3160382743
+    uniqueID: 1943327561
     locked: 0
-  - name: Grass
-    uniqueID: 2206102737
+  - name: Entities
+    uniqueID: 1477334017
+    locked: 0
+  - name: Default
+    uniqueID: 0
     locked: 0
