@@ -6,6 +6,7 @@ public class PlayerMovement : MonoBehaviour
 {
     private PlayerController PlayerController;
     private Animator playerAnimator;
+    private Rigidbody2D m_Rigidbody2D;
     private float horizontalMove = 0f;   
     private bool jump = false;
 
@@ -17,6 +18,7 @@ public class PlayerMovement : MonoBehaviour
     {
         PlayerController = GetComponent<PlayerController>();
         playerAnimator = GetComponent<Animator>();
+        m_Rigidbody2D = GetComponent<Rigidbody2D>();
     }
 
     private void Update()
@@ -30,11 +32,16 @@ public class PlayerMovement : MonoBehaviour
             jump = true;
             playerAnimator.SetBool("Jump", true);
         }
+        if (Input.GetButtonDown("Tackle"))
+        {
+            //jump = true;
+            playerAnimator.SetBool("Tackle", true);
+        }
     }
 
     private void OnCollisionEnter2D(Collision2D collision) //костыль, чтобы избежать повторной анимации прыжка в воздухе при повторном нажатии Space
     {   
-        if (collision.gameObject.layer == 6)    //слой Ground
+        if ((collision.gameObject.layer == 6)||(m_Rigidbody2D.velocity.y == 0))    //слой Ground
         {
             playerAnimator.SetBool("Jump", false);
         }
