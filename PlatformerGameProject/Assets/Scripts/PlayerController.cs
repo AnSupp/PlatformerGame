@@ -5,7 +5,7 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
 	[Range(0, .3f)] [SerializeField] private float m_MovementSmoothing = 0.05f;  // How much to smooth out the movement
-	private bool m_AirControl = true;                         // Whether or not a player can steer while jumping; //////////////////////////////////////////////////////////////
+	private bool m_AirControl = true;                         // Whether or not a player can steer while jumping;
 	[SerializeField] private LayerMask m_WhatIsGround;                          // A mask determining what is ground to the character
 	[SerializeField] private Transform m_GroundCheck;                           // A position marking where to check if the player is grounded.
 
@@ -22,7 +22,7 @@ public class PlayerController : MonoBehaviour
 
 	private void FixedUpdate()
 	{
-		bool wasGrounded = m_Grounded;
+		//bool wasGrounded = m_Grounded;
 		m_Grounded = false;
 
 		// The player is grounded if a circlecast to the groundcheck position hits anything designated as ground
@@ -38,10 +38,10 @@ public class PlayerController : MonoBehaviour
 	}
 
 
-	public void Move(float move, bool jump, float jumpForce)
+	public void Move(float move, bool jump, float jumpForce, bool tackle)
 	{
 		//only control the player if grounded or airControl is turned on
-		if (m_Grounded || m_AirControl)
+		if ((m_Grounded || m_AirControl) && !tackle)
 		{
 			// Move the character by finding the target velocity
 			Vector3 targetVelocity = new Vector2(move * 10f, m_Rigidbody2D.velocity.y);
@@ -68,6 +68,18 @@ public class PlayerController : MonoBehaviour
 			m_Grounded = false;
 			m_Rigidbody2D.velocity = (Vector3.up * jumpForce);
 		}
+		if (m_Grounded && tackle)
+        {
+			if (m_FacingRight)
+            {
+				Vector2.MoveTowards(transform.position, transform.position + Vector3.right, Time.deltaTime);
+			}
+            else
+            {
+				Vector2.MoveTowards(transform.position, transform.position + Vector3.left, Time.deltaTime);
+			}
+				
+        }
 	}
 
 

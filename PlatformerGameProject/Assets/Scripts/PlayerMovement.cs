@@ -9,6 +9,7 @@ public class PlayerMovement : MonoBehaviour
     private Rigidbody2D m_Rigidbody2D;
     private float horizontalMove = 0f;   
     private bool jump = false;
+    private bool tackle = false;
 
 
     [Range(0.1f, 1f)] [SerializeField] private float runSpeed = 1f;
@@ -34,7 +35,7 @@ public class PlayerMovement : MonoBehaviour
         }
         if (Input.GetButtonDown("Tackle"))
         {
-            //jump = true;
+            tackle = true;
             playerAnimator.SetBool("Tackle", true);
         }
     }
@@ -49,7 +50,8 @@ public class PlayerMovement : MonoBehaviour
 
     private void FixedUpdate()
     {
-        PlayerController.Move(horizontalMove , jump, jumpForce);
+        PlayerController.Move(horizontalMove , jump, jumpForce, tackle);
+        //tackle = false;
         jump = false;
     }
 }
