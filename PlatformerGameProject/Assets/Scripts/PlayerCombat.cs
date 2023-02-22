@@ -7,6 +7,7 @@ public class PlayerCombat : MonoBehaviour
     private Animator playerAnimator;
     public Transform lightAttackPoint;
     public float lightAttackRange;
+    public int lightATKDamage;
 
     public LayerMask enemyLayer;
 
@@ -32,7 +33,7 @@ public class PlayerCombat : MonoBehaviour
     
         foreach(Collider2D enemy in hitEnemies)
         {
-            Debug.Log("Damaged");
+            enemy.GetComponent<Entity>().TakeDamage(lightATKDamage);
         }
     
     }
