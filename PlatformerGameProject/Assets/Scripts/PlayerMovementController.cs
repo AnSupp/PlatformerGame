@@ -11,14 +11,14 @@ public class PlayerMovementController : MonoBehaviour
 	//Проверка земли под ногами
 	[SerializeField] private LayerMask m_WhatIsGround;  // A mask determining what is ground to the character
 	[SerializeField] private Transform m_GroundCheck;   // A position marking where to check if the player is grounded.
-	private const float k_GroundedRadius = 0.01f;		// Radius of the overlap circle to determine if grounded
-	private bool m_Grounded;							// Whether or not the player is grounded.
-	
+	private  const float k_GroundedRadius = 0.05f;       // Radius of the overlap circle to determine if grounded
+	private bool m_Grounded;                            // Whether or not the player is grounded.
+
 	//Движение
-	private bool isFacingRight = true;			// For determining which way the player is currently facing.
+	private bool isFacingRight = true;          // For determining which way the player is currently facing.
 	private Vector3 velocity = Vector3.zero;
-	private float movementSmoothing = 0.05f;	// How much to smooth out the movement
-	private bool airControl = true;				// Whether or not a player can steer while jumping;
+	private float movementSmoothing = 0.05f;    // How much to smooth out the movement
+	private bool airControl = true;             // Whether or not a player can steer while jumping;
 
 	private float horizontalMove = 0f;
 	private bool jump = false;
@@ -32,7 +32,7 @@ public class PlayerMovementController : MonoBehaviour
 
 	[Range(1, 4f)] [SerializeField] private float dashForce = 2.5f;
 	[Range(1, 4f)] [SerializeField] private float dashTime = 0.2f;
-	[Range(1, 10f)]  [SerializeField] private float dashCooldown = 2f;
+	[Range(1, 10f)] [SerializeField] private float dashCooldown = 2f;
 
 	private void Awake()
 	{
@@ -58,9 +58,9 @@ public class PlayerMovementController : MonoBehaviour
 		}
 
 		if (isJumping)
-        {
+		{
 			return;
-        }
+		}
 
 
 		if ((Input.GetButtonDown("Dash")) && canDash)
@@ -86,6 +86,7 @@ public class PlayerMovementController : MonoBehaviour
 		}
 
 		Move();
+		jump = false;
 	}
 
 
@@ -141,6 +142,7 @@ public class PlayerMovementController : MonoBehaviour
 			playerHitCollider.enabled = true;
 
 			yield return new WaitForSeconds(dashCooldown);
+			Debug.Log("DashReady");							//////////////////////////////////////////////////////////////
 			canDash = true;
 
 		}
@@ -159,11 +161,16 @@ public class PlayerMovementController : MonoBehaviour
 
 	private void OnCollisionEnter2D(Collision2D collision) //костыль, чтобы избежать повторной анимации прыжка в воздухе при повторном нажатии Space
 	{
-		if ((collision.gameObject.layer == 6) || (playerRigidbody.velocity.y == 0))    //слой Ground
+		if ((collision.gameObject.layer == 6) || (collision.gameObject.layer == 8)  || (playerRigidbody.velocity.y == 0))    //слой Ground
 		{
 			jump = false;
 			isJumping = false;
 			playerAnimator.SetBool("Jump", false);
 		}
+	}
+
+	private void OnDrawGizmosSelected() //для редактора
+	{
+		Gizmos.DrawWireSphere(m_GroundCheck.position, k_GroundedRadius);
 	}
 }
