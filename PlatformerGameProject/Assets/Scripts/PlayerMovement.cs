@@ -9,11 +9,15 @@ public class PlayerMovement : MonoBehaviour
     private Rigidbody2D m_Rigidbody2D;
     private float horizontalMove = 0f;   
     private bool jump = false;
-    private bool tackle = false;
 
-
+    [Header("Movement Vars")]
     [Range(0.1f, 1f)] [SerializeField] private float runSpeed = 1f;
-    [Range(1, 4f)] [SerializeField] private float jumpForce = 2.5f;  
+    [Range(1, 4f)] [SerializeField] private float jumpForce = 2.5f;
+    
+    [Range(1, 4f)] [SerializeField] private float dashForce = 2.5f;
+    [Range(1, 4f)] [SerializeField] private float dashTime = 0.2f;
+    [Range(1, 4f)] [SerializeField] private float dashCooldown = 1f;
+
 
     private void Awake()
     {
@@ -23,7 +27,11 @@ public class PlayerMovement : MonoBehaviour
     }
 
     private void Update()
-    {       
+    {
+        if (PlayerController.isDashing)
+        {
+            return;
+        }
         horizontalMove = Input.GetAxisRaw("Horizontal") * runSpeed;
         playerAnimator.SetFloat("Speed", Mathf.Abs(horizontalMove));
         
@@ -33,10 +41,10 @@ public class PlayerMovement : MonoBehaviour
             jump = true;
             playerAnimator.SetBool("Jump", true);
         }
-        if (Input.GetButtonDown("Tackle"))
+        if ((Input.GetButtonDown("Dash")))
         {
-            tackle = true;
-            playerAnimator.SetBool("Tackle", true);
+            StartCoroutine(PlayerController.Dash(dashForce, dashTime, dashCooldown));
+            playerAnimator.SetBool("Dash", true);
         }
     }
 
@@ -50,8 +58,7 @@ public class PlayerMovement : MonoBehaviour
 
     private void FixedUpdate()
     {
-        PlayerController.Move(horizontalMove , jump, jumpForce, tackle);
-        //tackle = false;
+        PlayerController.Move(horizontalMove , jump, jumpForce);
         jump = false;
     }
 }

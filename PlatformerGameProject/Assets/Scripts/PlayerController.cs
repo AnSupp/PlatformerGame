@@ -4,25 +4,28 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-	[Range(0, .3f)] [SerializeField] private float m_MovementSmoothing = 0.05f;  // How much to smooth out the movement
+	private float m_MovementSmoothing = 0.05f;  // How much to smooth out the movement
 	private bool m_AirControl = true;                         // Whether or not a player can steer while jumping;
 	[SerializeField] private LayerMask m_WhatIsGround;                          // A mask determining what is ground to the character
 	[SerializeField] private Transform m_GroundCheck;                           // A position marking where to check if the player is grounded.
 
 	private const float k_GroundedRadius = 0.01f; // Radius of the overlap circle to determine if grounded
 	private bool m_Grounded;            // Whether or not the player is grounded.
+	public bool isDashing;
+	private bool canDash = true;
 	private Rigidbody2D m_Rigidbody2D;
 	private bool m_FacingRight = true;  // For determining which way the player is currently facing.
 	private Vector3 m_Velocity = Vector3.zero;
+	private Animator playerAnimator;
 
 	private void Awake()
 	{
 		m_Rigidbody2D = GetComponent<Rigidbody2D>();
+		playerAnimator = GetComponent<Animator>();
 	}
 
 	private void FixedUpdate()
 	{
-		//bool wasGrounded = m_Grounded;
 		m_Grounded = false;
 
 		// The player is grounded if a circlecast to the groundcheck position hits anything designated as ground
@@ -38,10 +41,14 @@ public class PlayerController : MonoBehaviour
 	}
 
 
-	public void Move(float move, bool jump, float jumpForce, bool tackle)
+	public void Move(float move, bool jump, float jumpForce)
 	{
+		if (isDashing)
+        {
+			return;
+        }
 		//only control the player if grounded or airControl is turned on
-		if ((m_Grounded || m_AirControl) && !tackle)
+		if ((m_Grounded || m_AirControl))
 		{
 			// Move the character by finding the target velocity
 			Vector3 targetVelocity = new Vector2(move * 10f, m_Rigidbody2D.velocity.y);
@@ -68,19 +75,28 @@ public class PlayerController : MonoBehaviour
 			m_Grounded = false;
 			m_Rigidbody2D.velocity = (Vector3.up * jumpForce);
 		}
-		if (m_Grounded && tackle)
-        {
-			if (m_FacingRight)
-            {
-				Vector2.MoveTowards(transform.position, transform.position + Vector3.right, Time.deltaTime);
-			}
-            else
-            {
-				Vector2.MoveTowards(transform.position, transform.position + Vector3.left, Time.deltaTime);
-			}
-				
-        }
 	}
+
+	public IEnumerator Dash(float dashForce, float dashTime, float dashCooldown)
+    {
+		if (m_Grounded)
+        {
+			canDash = false;
+			isDashing = true;
+			float originalGravity = m_Rigidbody2D.gravityScale;
+			m_Rigidbody2D.gravityScale = 0f;
+			m_Rigidbody2D.velocity = new Vector2(transform.localScale.x * dashForce, 0f);
+
+			yield return new WaitForSeconds(dashTime);
+
+			m_Rigidbody2D.gravityScale = originalGravity;
+			isDashing = false;
+			yield return new WaitForSeconds(dashCooldown);
+			canDash = true;
+			playerAnimator.SetBool("Dash", false);
+		}
+	}
+
 
 
 	private void Flip()

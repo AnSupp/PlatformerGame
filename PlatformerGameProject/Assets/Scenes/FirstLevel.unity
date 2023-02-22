@@ -547,8 +547,7 @@ GameObject:
   - component: {fileID: 137127337}
   - component: {fileID: 137127339}
   - component: {fileID: 137127338}
-  - component: {fileID: 137127341}
-  - component: {fileID: 137127340}
+  - component: {fileID: 137127342}
   m_Layer: 3
   m_Name: Player
   m_TagString: Player
@@ -704,7 +703,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.12, y: 0.24}
   m_EdgeRadius: 0
---- !u!114 &137127340
+--- !u!114 &137127342
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -713,28 +712,19 @@ MonoBehaviour:
   m_GameObject: {fileID: 137127333}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c67f1b741e6226c418171adae7fe541a, type: 3}
+  m_Script: {fileID: 11500000, guid: 1b738ec89afb0c04589c3a3801f75070, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  runSpeed: 0.1
-  jumpForce: 3
---- !u!114 &137127341
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 137127333}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b2364f0451a9d31488e5c2266d696afe, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_MovementSmoothing: 0.05
+  playerHitCollider: {fileID: 137127339}
   m_WhatIsGround:
     serializedVersion: 2
     m_Bits: 64
   m_GroundCheck: {fileID: 316003363}
+  runSpeed: 0.13
+  jumpForce: 3
+  dashForce: 2.5
+  dashTime: 0.2
+  dashCooldown: 2
 --- !u!1 &148488379
 GameObject:
   m_ObjectHideFlags: 0
