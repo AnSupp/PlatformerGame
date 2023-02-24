@@ -142,7 +142,6 @@ public class PlayerMovementController : MonoBehaviour
 			playerHitCollider.enabled = true;
 
 			yield return new WaitForSeconds(dashCooldown);
-			Debug.Log("DashReady");							//////////////////////////////////////////////////////////////
 			canDash = true;
 
 		}
