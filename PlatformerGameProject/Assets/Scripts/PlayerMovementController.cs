@@ -62,7 +62,6 @@ public class PlayerMovementController : MonoBehaviour
 			return;
 		}
 
-
 		if ((Input.GetButtonDown("Dash")) && canDash)
 		{
 			StartCoroutine(Dash());
@@ -133,7 +132,8 @@ public class PlayerMovementController : MonoBehaviour
 		{
 			canDash = false;
 			isDashing = true;
-			playerRigidbody.velocity = new Vector2(transform.localScale.x * dashForce, 0f);
+
+			playerRigidbody.velocity = transform.right * dashForce;
 			playerHitCollider.enabled = false;
 
 			yield return new WaitForSeconds(dashTime);
@@ -152,10 +152,7 @@ public class PlayerMovementController : MonoBehaviour
 		// Switch the way the player is labelled as facing.
 		isFacingRight = !isFacingRight;
 
-		// Multiply the player's x local scale by -1.
-		Vector3 theScale = transform.localScale;
-		theScale.x *= -1;
-		transform.localScale = theScale;
+		transform.Rotate(0f, 180f, 0f);
 	}
 
 	private void OnCollisionEnter2D(Collision2D collision) //костыль, чтобы избежать повторной анимации прыжка в воздухе при повторном нажатии Space

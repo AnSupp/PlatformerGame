@@ -5,18 +5,26 @@ using UnityEngine;
 public class PlayerCombat : MonoBehaviour
 {
     private Animator playerAnimator;
-    public Transform lightAttackPoint;
-    public float lightAttackRange;
-    public int lightATKDamage;
+    [SerializeField] private LayerMask enemyLayer;
 
+    [SerializeField] private GameObject bulletPrefab;
+  
     private bool isAttacking = false;
-    private bool canLightAttack = true;
-    private bool canBowAttack = true;
-    [Header("Cooldowns")]
+    
+    
+    [Header("Light Attack")]
+    [SerializeField] private Transform lightAttackPoint;
     [SerializeField] [Range(0.85f, 1.25f)] private float lightATKCooldown = 0.85f;
-    [SerializeField] [Range(1f, 2f)] private float bowATKCooldown;
+    [SerializeField] private float lightAttackRange;
+    [SerializeField] private int lightATKDamage;
+    private bool canLightAttack = true;
 
-    public LayerMask enemyLayer;
+    [Header("Bow Attack")]
+    [SerializeField] private Transform bowAttackPoint;
+    [SerializeField] [Range(1f, 2f)] private float bowATKCooldown;
+    private bool canBowAttack = true;
+
+    
 
     private void Awake()
     {
@@ -66,6 +74,11 @@ public class PlayerCombat : MonoBehaviour
         yield return new WaitForSeconds(bowATKCooldown);
         canBowAttack = true;
 
+    }
+
+    private void ArrowShot()
+    {
+        Instantiate(bulletPrefab, bowAttackPoint.position, bowAttackPoint.rotation);
     }
 
     private void OnDrawGizmosSelected() //для редактора

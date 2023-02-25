@@ -639,6 +639,7 @@ Transform:
   m_Children:
   - {fileID: 316003363}
   - {fileID: 1241764113}
+  - {fileID: 312029210}
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -717,14 +718,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fdeb594b1cca5d34f9959eadcb82f0c4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lightAttackPoint: {fileID: 1241764113}
-  lightAttackRange: 0.133
-  lightATKDamage: 10
-  lightATKCooldown: 0.85
-  bowATKCooldown: 2
   enemyLayer:
     serializedVersion: 2
     m_Bits: 512
+  bulletPrefab: {fileID: 6757577515133711580, guid: dfb49bffa49d71c4ebbff9ddf10228f3, type: 3}
+  lightAttackPoint: {fileID: 1241764113}
+  lightATKCooldown: 0.85
+  lightAttackRange: 0.133
+  lightATKDamage: 10
+  bowAttackPoint: {fileID: 312029210}
+  bowATKCooldown: 2
 --- !u!114 &137127342
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1614,6 +1617,36 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &312029209
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 312029210}
+  m_Layer: 3
+  m_Name: ArrowPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &312029210
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 312029209}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.1249, y: 0.18487, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 137127336}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &314394511
 GameObject:
   m_ObjectHideFlags: 0
