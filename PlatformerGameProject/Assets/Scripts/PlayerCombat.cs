@@ -13,15 +13,16 @@ public class PlayerCombat : MonoBehaviour
     
     
     [Header("Light Attack")]
-    [SerializeField] private Transform lightAttackPoint;
-    [SerializeField] [Range(0.85f, 1.25f)] private float lightATKCooldown = 0.85f;
-    [SerializeField] private float lightAttackRange;
     [SerializeField] private int lightATKDamage;
+    [SerializeField] [Range(0.85f, 1.25f)] private float lightATKCooldown = 0.85f;
+    [SerializeField] private Transform lightAttackPoint; 
+    [SerializeField] private float lightAttackRange;
     private bool canLightAttack = true;
 
     [Header("Bow Attack")]
-    [SerializeField] private Transform bowAttackPoint;
+    [SerializeField] private int bowATKDamage;
     [SerializeField] [Range(1f, 2f)] private float bowATKCooldown;
+    [SerializeField] private Transform bowAttackPoint;
     private bool canBowAttack = true;
 
     
@@ -78,7 +79,7 @@ public class PlayerCombat : MonoBehaviour
 
     private void ArrowShot()
     {
-        Instantiate(bulletPrefab, bowAttackPoint.position, bowAttackPoint.rotation);
+        Instantiate(bulletPrefab, bowAttackPoint.position, bowAttackPoint.rotation).GetComponent<Arrow>().SetArrowDamage(bowATKDamage);
     }
 
     private void OnDrawGizmosSelected() //для редактора

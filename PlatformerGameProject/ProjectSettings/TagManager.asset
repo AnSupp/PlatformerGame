@@ -16,7 +16,7 @@ TagManager:
   - Border
   - Obstacle
   - Enemy
-  - 
+  - Traps
   - 
   - 
   - 
@@ -53,6 +53,9 @@ TagManager:
     locked: 0
   - name: Entities
     uniqueID: 1477334017
+    locked: 0
+  - name: Traps
+    uniqueID: 3264134229
     locked: 0
   - name: Player
     uniqueID: 1137267035

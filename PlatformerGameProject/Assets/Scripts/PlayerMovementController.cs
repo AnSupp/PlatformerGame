@@ -143,7 +143,6 @@ public class PlayerMovementController : MonoBehaviour
 
 			yield return new WaitForSeconds(dashCooldown);
 			canDash = true;
-
 		}
 	}
 
