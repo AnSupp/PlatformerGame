@@ -5,10 +5,13 @@ using Pathfinding;
 
 public class EnemyAI : MonoBehaviour
 {
+    private EnemyCombat enemyCombat;
+
     [Header("Pathfinding")]
     [SerializeField] private Transform target;
     [SerializeField] private float activateDistance = 50f;
     [SerializeField] private float pathUpdateSeconds = 0.5f;
+    [SerializeField] private float attackDistance;
 
     [Header("Physics")]
     [SerializeField] private float speed = 200f;
@@ -33,10 +36,12 @@ public class EnemyAI : MonoBehaviour
     private void OnDrawGizmosSelected() //для редактора
     {
         Gizmos.DrawWireSphere(transform.position, activateDistance);
+        Gizmos.DrawWireSphere(transform.position, attackDistance);
     }
 
     public void Start()
     {
+        enemyCombat = GetComponent<EnemyCombat>();
         seeker = GetComponent<Seeker>();
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
@@ -46,6 +51,24 @@ public class EnemyAI : MonoBehaviour
 
     private void FixedUpdate()
     {
+        if (enemyCombat.isAttacking)
+        {
+            return;
+        }
+
+        if (TargetInAttackDistance() && enemyCombat.canAttack) //если игрок в зоне поражения и можем атаковать - атакуем
+        {
+            enemyCombat.StartAttack();
+        }
+
+        if (TargetInAttackDistance()) //в любом случае, если игрок в зоне поражения не двигаемся
+        {
+            Flip();
+            rb.velocity = Vector2.zero;
+            animator.SetFloat("Speed", Mathf.Abs(rb.velocity.x));
+            return;
+        }
+
         if (TargetInFollowDistance() && followEnabled)
         {
             PathFollow();
@@ -119,6 +142,19 @@ public class EnemyAI : MonoBehaviour
         }
     }
 
+    private void Flip()
+    {
+        Vector3 facingDirection = (target.transform.position - transform.position).normalized;
+        if (facingDirection.x > 0)
+        {
+            transform.localScale = new Vector3(-1f * Mathf.Abs(transform.localScale.x), transform.localScale.y, transform.localScale.z);
+        }
+        else if (facingDirection.x < 0)
+        {
+            transform.localScale = new Vector3(Mathf.Abs(transform.localScale.x), transform.localScale.y, transform.localScale.z);
+        }
+    }
+
     private bool TargetInFollowDistance()
     {
         return Vector2.Distance(transform.position, target.transform.position) < activateDistance;
@@ -126,7 +162,7 @@ public class EnemyAI : MonoBehaviour
 
     private bool TargetInAttackDistance()
     {
-        return Vector2.Distance(transform.position, target.transform.position) < activateDistance;
+        return Vector2.Distance(transform.position, target.transform.position) < attackDistance;
     }
 
     private void OnPathComplete(Path p)

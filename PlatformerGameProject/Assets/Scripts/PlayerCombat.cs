@@ -5,11 +5,12 @@ using UnityEngine;
 public class PlayerCombat : MonoBehaviour
 {
     private Animator playerAnimator;
+    private PlayerMovementController movementController;
     [SerializeField] private LayerMask enemyLayer;
 
-    [SerializeField] private GameObject bulletPrefab;
+    [SerializeField] private GameObject arrowPrefab;
   
-    private bool isAttacking = false;
+    [HideInInspector] public bool isAttacking = false;
     
     
     [Header("Light Attack")]
@@ -30,27 +31,37 @@ public class PlayerCombat : MonoBehaviour
     private void Awake()
     {
         playerAnimator = GetComponent<Animator>();
+        movementController = GetComponent<PlayerMovementController>();
     }
 
     void Update()
     {
-        if (!isAttacking)
+        if (movementController.isDashing || (movementController.isJumping))
         {
-            if (Input.GetButtonDown("LightAttack") && canLightAttack)
-            {
-                StartCoroutine(LightAttack());
-            }
-
-            if (Input.GetButtonDown("BowAttack") && canBowAttack)
-            {
-                StartCoroutine(BowAttack());
-            }
+            return;
         }
+
+        if (isAttacking)
+        {
+            return;
+        }
+
+        if (Input.GetButtonDown("LightAttack") && canLightAttack)
+        {
+            StartCoroutine(LightAttack());
+        }
+
+        if (Input.GetButtonDown("BowAttack") && canBowAttack)
+        {
+            StartCoroutine(BowAttack());
+        }
+        
     }
 
     private IEnumerator LightAttack()
     {
         playerAnimator.SetTrigger("LightATK1");
+        isAttacking = true;
 
         Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(lightAttackPoint.position, lightAttackRange, enemyLayer);
 
@@ -69,6 +80,7 @@ public class PlayerCombat : MonoBehaviour
     private IEnumerator BowAttack()
     {
         playerAnimator.SetTrigger("BowATK");
+        isAttacking = true;
 
         canBowAttack = false;
 
@@ -79,7 +91,12 @@ public class PlayerCombat : MonoBehaviour
 
     private void ArrowShot()
     {
-        Instantiate(bulletPrefab, bowAttackPoint.position, bowAttackPoint.rotation).GetComponent<Arrow>().SetArrowDamage(bowATKDamage);
+        Instantiate(arrowPrefab, bowAttackPoint.position, bowAttackPoint.rotation).GetComponent<Arrow>().SetArrowDamage(bowATKDamage);
+    }
+
+    private void AttackOver()
+    {
+        isAttacking = false;
     }
 
     private void OnDrawGizmosSelected() //для редактора

@@ -6,6 +6,7 @@ public class PlayerMovementController : MonoBehaviour
 {
 	private Rigidbody2D playerRigidbody;
 	private Animator playerAnimator;
+	private PlayerCombat playerCombat;
 	[SerializeField] private Collider2D playerHitCollider;
 
 	//Проверка земли под ногами
@@ -22,8 +23,8 @@ public class PlayerMovementController : MonoBehaviour
 
 	private float horizontalMove = 0f;
 	private bool jump = false;
-	private bool isJumping = false;
-	private bool isDashing = false;
+	[HideInInspector] public bool isJumping = false;
+	[HideInInspector] public bool isDashing = false;
 	private bool canDash = true;
 
 	[Header("Movement Vars")]
@@ -38,10 +39,16 @@ public class PlayerMovementController : MonoBehaviour
 	{
 		playerRigidbody = GetComponent<Rigidbody2D>();
 		playerAnimator = GetComponent<Animator>();
+		playerCombat = GetComponent<PlayerCombat>();
 	}
 
 	private void Update()
 	{
+		if (playerCombat.isAttacking)
+        {
+			return;
+        }
+
 		if (isDashing)
 		{
 			return;
@@ -49,17 +56,16 @@ public class PlayerMovementController : MonoBehaviour
 		horizontalMove = Input.GetAxisRaw("Horizontal") * runSpeed;
 		playerAnimator.SetFloat("Speed", Mathf.Abs(horizontalMove));
 
+		if (isJumping)
+		{
+			return;
+		}
 
 		if (Input.GetButtonDown("Jump"))
 		{
 			isJumping = true;
 			jump = true;
 			playerAnimator.SetBool("Jump", true);
-		}
-
-		if (isJumping)
-		{
-			return;
 		}
 
 		if ((Input.GetButtonDown("Dash")) && canDash)
@@ -91,7 +97,7 @@ public class PlayerMovementController : MonoBehaviour
 
 	public void Move()
 	{
-		if (isDashing)
+		if (isDashing || playerCombat.isAttacking)
 		{
 			return;
 		}
