@@ -24,31 +24,42 @@ public class EnemyAI : MonoBehaviour
 
     private Path path;
     private int currentWaypoint = 0;
+    private Vector2 currentVelocity;
     private RaycastHit2D isGrounded;
     private Seeker seeker;
     private Rigidbody2D rb;
+    private Animator animator;
 
-    private Vector2 currentVelocity;
+    private void OnDrawGizmosSelected() //для редактора
+    {
+        Gizmos.DrawWireSphere(transform.position, activateDistance);
+    }
 
     public void Start()
     {
         seeker = GetComponent<Seeker>();
         rb = GetComponent<Rigidbody2D>();
+        animator = GetComponent<Animator>();
 
         InvokeRepeating("UpdatePath", 0f, pathUpdateSeconds);
     }
 
     private void FixedUpdate()
     {
-        if (TargetInDistance() && followEnabled)
+        if (TargetInFollowDistance() && followEnabled)
         {
             PathFollow();
+        }
+        else
+        {
+            rb.velocity = Vector2.zero;
+            animator.SetFloat("Speed", Mathf.Abs(rb.velocity.x));
         }
     }
 
     private void UpdatePath()
     {
-        if (followEnabled && TargetInDistance() && seeker.IsDone())
+        if (followEnabled && TargetInFollowDistance() && seeker.IsDone())
         {
             seeker.StartPath(rb.position, target.position, OnPathComplete);
         }
@@ -85,6 +96,7 @@ public class EnemyAI : MonoBehaviour
         }
 
         rb.velocity = Vector2.SmoothDamp(rb.velocity, force, ref currentVelocity, 0.5f);
+        animator.SetFloat("Speed", Mathf.Abs(rb.velocity.x));
 
         // Next Waypoint
         float distance = Vector2.Distance(rb.position, path.vectorPath[currentWaypoint]);
@@ -107,7 +119,12 @@ public class EnemyAI : MonoBehaviour
         }
     }
 
-    private bool TargetInDistance()
+    private bool TargetInFollowDistance()
+    {
+        return Vector2.Distance(transform.position, target.transform.position) < activateDistance;
+    }
+
+    private bool TargetInAttackDistance()
     {
         return Vector2.Distance(transform.position, target.transform.position) < activateDistance;
     }

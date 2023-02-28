@@ -359,13 +359,13 @@ TextureImporter:
       name: slime-Sheet_9
       rect:
         serializedVersion: 2
-        x: 34
+        x: 33
         y: 26
-        width: 29
+        width: 30
         height: 11
       alignment: 7
       pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 1, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
