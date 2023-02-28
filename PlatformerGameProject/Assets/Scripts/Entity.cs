@@ -35,6 +35,8 @@ public class Entity : MonoBehaviour
 
         GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezePositionY;
         GetComponent<Collider2D>().enabled = false;
+        GetComponent<EnemyAI>().enabled = false;
+
         this.enabled = false;
     }
 }

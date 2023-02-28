@@ -1,0 +1,1081 @@
+fileFormatVersion: 2
+guid: b918486eeac573d4fb19f00f70bb2906
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7579276433419725484
+    second: WerewolfBoss_0
+  - first:
+      213: 8089125840079098981
+    second: WerewolfBoss_1
+  - first:
+      213: -7016940528227367116
+    second: WerewolfBoss_2
+  - first:
+      213: 4438175668864504860
+    second: WerewolfBoss_3
+  - first:
+      213: -7878410451151993913
+    second: WerewolfBoss_4
+  - first:
+      213: -1008758621946332749
+    second: WerewolfBoss_5
+  - first:
+      213: 36289387723273911
+    second: WerewolfBoss_6
+  - first:
+      213: -36009675834739095
+    second: WerewolfBoss_7
+  - first:
+      213: 8104255540499507548
+    second: WerewolfBoss_8
+  - first:
+      213: -8388096827183883295
+    second: WerewolfBoss_9
+  - first:
+      213: 81875540401884551
+    second: WerewolfBoss_10
+  - first:
+      213: 4589332364455067241
+    second: WerewolfBoss_11
+  - first:
+      213: -7275211548505552649
+    second: WerewolfBoss_12
+  - first:
+      213: -3582103822489863090
+    second: WerewolfBoss_13
+  - first:
+      213: 1349662939474342323
+    second: WerewolfBoss_14
+  - first:
+      213: 6000826682086192672
+    second: WerewolfBoss_15
+  - first:
+      213: -1121049914639745354
+    second: WerewolfBoss_16
+  - first:
+      213: -2613857225442090728
+    second: WerewolfBoss_17
+  - first:
+      213: 8160238264897828001
+    second: WerewolfBoss_18
+  - first:
+      213: -4088614597601753788
+    second: WerewolfBoss_19
+  - first:
+      213: 2708383001084951652
+    second: WerewolfBoss_20
+  - first:
+      213: 1270336319598729343
+    second: WerewolfBoss_21
+  - first:
+      213: -5204322696221972255
+    second: WerewolfBoss_22
+  - first:
+      213: -6400418753760675281
+    second: WerewolfBoss_23
+  - first:
+      213: 8420879670769210602
+    second: WerewolfBoss_24
+  - first:
+      213: -7021688060729401242
+    second: WerewolfBoss_25
+  - first:
+      213: 4821426020734677645
+    second: WerewolfBoss_26
+  - first:
+      213: 2058129611858318576
+    second: WerewolfBoss_27
+  - first:
+      213: -5061463969165805307
+    second: WerewolfBoss_28
+  - first:
+      213: 6856716202998023814
+    second: WerewolfBoss_29
+  - first:
+      213: -7802096428373539532
+    second: WerewolfBoss_30
+  - first:
+      213: -4220499829032083353
+    second: WerewolfBoss_31
+  - first:
+      213: -881109342458326882
+    second: WerewolfBoss_32
+  - first:
+      213: -203900193953326901
+    second: WerewolfBoss_33
+  - first:
+      213: 1317635593345964899
+    second: WerewolfBoss_34
+  - first:
+      213: -6313158947018945825
+    second: WerewolfBoss_35
+  - first:
+      213: -7590434776827128056
+    second: WerewolfBoss_36
+  - first:
+      213: 2735813860967210475
+    second: WerewolfBoss_37
+  - first:
+      213: 8644209878866882055
+    second: WerewolfBoss_38
+  - first:
+      213: -443939151101266847
+    second: WerewolfBoss_39
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 300
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: WerewolfBoss_0
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 1092
+        width: 134
+        height: 163
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45517839d3001d690800000000000000
+      internalID: -7579276433419725484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WerewolfBoss_1
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 1092
+        width: 142
+        height: 160
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 3, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5641951f719524070800000000000000
+      internalID: 8089125840079098981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WerewolfBoss_2
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 1092
+        width: 142
+        height: 160
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 3, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43747f454c1de9e90800000000000000
+      internalID: -7016940528227367116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WerewolfBoss_3
+      rect:
+        serializedVersion: 2
+        x: 819
+        y: 1093
+        width: 134
+        height: 163
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c145371a141979d30800000000000000
+      internalID: 4438175668864504860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WerewolfBoss_4
+      rect:
+        serializedVersion: 2
+        x: 974
+        y: 1093
+        width: 139
+        height: 160
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c34c50bf634aa290800000000000000
+      internalID: -7878410451151993913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WerewolfBoss_5
+      rect:
+        serializedVersion: 2
+        x: 1134
+        y: 1093
+        width: 139
+        height: 160
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b9b6c2c06b2002f0800000000000000
+      internalID: -1008758621946332749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WerewolfBoss_6
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 892
+        width: 155
+        height: 166
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b6bc50810de08000800000000000000
+      internalID: 36289387723273911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WerewolfBoss_7
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 892
+        width: 163
+        height: 165
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 966b46ff361108ff0800000000000000
+      internalID: -36009675834739095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WerewolfBoss_8
+      rect:
+        serializedVersion: 2
+        x: 347
+        y: 892
+        width: 155
+        height: 166
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c59e674d979187070800000000000000
+      internalID: 8104255540499507548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WerewolfBoss_9
+      rect:
+        serializedVersion: 2
+        x: 524
+        y: 892
+        width: 160
+        height: 164
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1eb9f12b06e779b80800000000000000
+      internalID: -8388096827183883295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WerewolfBoss_10
+      rect:
+        serializedVersion: 2
+        x: 818
+        y: 893
+        width: 137
+        height: 166
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78d8275ce51e22100800000000000000
+      internalID: 81875540401884551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WerewolfBoss_11
+      rect:
+        serializedVersion: 2
+        x: 973
+        y: 893
+        width: 163
+        height: 165
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96e3c8b587590bf30800000000000000
+      internalID: 4589332364455067241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WerewolfBoss_12
+      rect:
+        serializedVersion: 2
+        x: 1157
+        y: 893
+        width: 155
+        height: 166
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f8c18174a1490b90800000000000000
+      internalID: -7275211548505552649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WerewolfBoss_13
+      rect:
+        serializedVersion: 2
+        x: 1334
+        y: 893
+        width: 160
+        height: 164
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4c3cef5d8fc94ec0800000000000000
+      internalID: -3582103822489863090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WerewolfBoss_14
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 687
+        width: 155
+        height: 161
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b1b0e9ea47fab210800000000000000
+      internalID: 1349662939474342323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WerewolfBoss_15
+      rect:
+        serializedVersion: 2
+        x: 185
+        y: 687
+        width: 164
+        height: 161
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 026fe68d218374350800000000000000
+      internalID: 6000826682086192672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WerewolfBoss_16
+      rect:
+        serializedVersion: 2
+        x: 358
+        y: 687
+        width: 155
+        height: 161
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6be7a6eca0b3170f0800000000000000
+      internalID: -1121049914639745354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WerewolfBoss_17
+      rect:
+        serializedVersion: 2
+        x: 532
+        y: 687
+        width: 155
+        height: 161
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 811afe7c3b6b9bbd0800000000000000
+      internalID: -2613857225442090728
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WerewolfBoss_18
+      rect:
+        serializedVersion: 2
+        x: 710
+        y: 687
+        width: 164
+        height: 161
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a4f8c5977dfe3170800000000000000
+      internalID: 8160238264897828001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WerewolfBoss_19
+      rect:
+        serializedVersion: 2
+        x: 901
+        y: 687
+        width: 155
+        height: 161
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44588769fa25247c0800000000000000
+      internalID: -4088614597601753788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WerewolfBoss_20
+      rect:
+        serializedVersion: 2
+        x: 1078
+        y: 687
+        width: 155
+        height: 161
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46cff576dfb169520800000000000000
+      internalID: 2708383001084951652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WerewolfBoss_21
+      rect:
+        serializedVersion: 2
+        x: 1258
+        y: 687
+        width: 155
+        height: 161
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7895f2f62421a110800000000000000
+      internalID: 1270336319598729343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WerewolfBoss_22
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 479
+        width: 155
+        height: 153
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e8af2bd41886c7b0800000000000000
+      internalID: -5204322696221972255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WerewolfBoss_23
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 479
+        width: 155
+        height: 153
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2ab858ed052d27a0800000000000000
+      internalID: -6400418753760675281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WerewolfBoss_24
+      rect:
+        serializedVersion: 2
+        x: 374
+        y: 479
+        width: 155
+        height: 153
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae4d180e179fcd470800000000000000
+      internalID: 8420879670769210602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WerewolfBoss_25
+      rect:
+        serializedVersion: 2
+        x: 594
+        y: 481
+        width: 263
+        height: 151
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 51, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6606f9849e3fd8e90800000000000000
+      internalID: -7021688060729401242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WerewolfBoss_26
+      rect:
+        serializedVersion: 2
+        x: 930
+        y: 478
+        width: 253
+        height: 151
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 46, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8237bcbb6529e240800000000000000
+      internalID: 4821426020734677645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WerewolfBoss_27
+      rect:
+        serializedVersion: 2
+        x: 1259
+        y: 472
+        width: 291
+        height: 155
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 62, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f417804af1ff8c10800000000000000
+      internalID: 2058129611858318576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WerewolfBoss_28
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 261
+        width: 412
+        height: 146
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 130, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 509fe6a365112c9b0800000000000000
+      internalID: -5061463969165805307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WerewolfBoss_29
+      rect:
+        serializedVersion: 2
+        x: 562
+        y: 254
+        width: 388
+        height: 149
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 133, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 686cc55ee03f72f50800000000000000
+      internalID: 6856716202998023814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WerewolfBoss_30
+      rect:
+        serializedVersion: 2
+        x: 974
+        y: 254
+        width: 274
+        height: 149
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 76, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 435837bb2a269b390800000000000000
+      internalID: -7802096428373539532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WerewolfBoss_31
+      rect:
+        serializedVersion: 2
+        x: 1422
+        y: 252
+        width: 228
+        height: 146
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 46, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76022f344c5cd65c0800000000000000
+      internalID: -4220499829032083353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WerewolfBoss_32
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 31
+        width: 148
+        height: 143
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e905e7aa8bba5c3f0800000000000000
+      internalID: -881109342458326882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WerewolfBoss_33
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 31
+        width: 149
+        height: 143
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc857c99ad99b2df0800000000000000
+      internalID: -203900193953326901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WerewolfBoss_34
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 31
+        width: 149
+        height: 143
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36b1ccc479e294210800000000000000
+      internalID: 1317635593345964899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WerewolfBoss_35
+      rect:
+        serializedVersion: 2
+        x: 524
+        y: 31
+        width: 148
+        height: 142
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fda4b50e2672368a0800000000000000
+      internalID: -6313158947018945825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WerewolfBoss_36
+      rect:
+        serializedVersion: 2
+        x: 795
+        y: 31
+        width: 224
+        height: 90
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 807927c49cb59a690800000000000000
+      internalID: -7590434776827128056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WerewolfBoss_37
+      rect:
+        serializedVersion: 2
+        x: 1140
+        y: 31
+        width: 210
+        height: 76
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bed5a8a263097f520800000000000000
+      internalID: 2735813860967210475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WerewolfBoss_38
+      rect:
+        serializedVersion: 2
+        x: 1481
+        y: 31
+        width: 219
+        height: 58
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70e68c9f51766f770800000000000000
+      internalID: 8644209878866882055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: WerewolfBoss_39
+      rect:
+        serializedVersion: 2
+        x: 1874
+        y: 31
+        width: 199
+        height: 58
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16478b4b1bfc6d9f0800000000000000
+      internalID: -443939151101266847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
