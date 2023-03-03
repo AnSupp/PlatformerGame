@@ -7,6 +7,7 @@ public class PlayerMovementController : MonoBehaviour
 	private Rigidbody2D playerRigidbody;
 	private Animator playerAnimator;
 	private PlayerCombat playerCombat;
+	private PlayerHealth playerHealth;
 	[SerializeField] private Collider2D playerHitCollider;
 
 	//Проверка земли под ногами
@@ -28,22 +29,28 @@ public class PlayerMovementController : MonoBehaviour
 	private bool canDash = true;
 
 	[Header("Movement Vars")]
-	[Range(0.1f, 1f)] [SerializeField] private float runSpeed = 1f;
-	[Range(1, 4f)] [SerializeField] private float jumpForce = 2.5f;
+	[Range(0.1f, 1f)] [SerializeField] private float runSpeed;
+	[Range(1, 4f)] [SerializeField] private float jumpForce;
 
-	[Range(1, 4f)] [SerializeField] private float dashForce = 2.5f;
-	[Range(1, 4f)] [SerializeField] private float dashTime = 0.2f;
-	[Range(1, 10f)] [SerializeField] private float dashCooldown = 2f;
+	[Range(1, 4f)] [SerializeField] private float dashForce;
+	[Range(0.1f, 1f)] [SerializeField] private float dashTime;
+	[Range(1, 10f)] [SerializeField] private float dashCooldown;
 
 	private void Awake()
 	{
 		playerRigidbody = GetComponent<Rigidbody2D>();
 		playerAnimator = GetComponent<Animator>();
 		playerCombat = GetComponent<PlayerCombat>();
+		playerHealth = GetComponent<PlayerHealth>();
 	}
 
 	private void Update()
 	{
+		if (playerHealth.isTakingDamage)
+        {
+			return;
+        }
+
 		if (playerCombat.isAttacking)
         {
 			return;
@@ -97,7 +104,7 @@ public class PlayerMovementController : MonoBehaviour
 
 	public void Move()
 	{
-		if (isDashing || playerCombat.isAttacking)
+		if (isDashing || playerCombat.isAttacking || playerHealth.isTakingDamage)
 		{
 			return;
 		}

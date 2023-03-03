@@ -8,6 +8,7 @@ public abstract class EntityHealth : MonoBehaviour
 
     public int maxHealth;
     protected int currentHealth;
+    [HideInInspector] public bool isTakingDamage = false;
 
     protected virtual void Awake()
     {
@@ -21,6 +22,7 @@ public abstract class EntityHealth : MonoBehaviour
 
     public virtual void TakeDamage(int damage)
     {
+        isTakingDamage = true;
         currentHealth -= damage;
         animator.SetTrigger("Hurt");
 
@@ -29,6 +31,12 @@ public abstract class EntityHealth : MonoBehaviour
             Die();
         }
     }
+
+    private void TakingDamageOver()
+    {
+        isTakingDamage = false;
+    }
+
     protected virtual void Die()
     {
         animator.SetBool("Dead", true);

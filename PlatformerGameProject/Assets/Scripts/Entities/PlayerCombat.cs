@@ -5,6 +5,7 @@ using UnityEngine;
 public class PlayerCombat : EntityCombat
 {
     private PlayerMovementController movementController;
+    private PlayerHealth playerHealth;
 
     [Header("Bow Attack")]
     [SerializeField] private GameObject arrowPrefab;
@@ -17,6 +18,7 @@ public class PlayerCombat : EntityCombat
     {
         base.Awake();
         movementController = GetComponent<PlayerMovementController>();
+        playerHealth = GetComponent<PlayerHealth>();
     }
 
     private void Hit()
@@ -30,6 +32,11 @@ public class PlayerCombat : EntityCombat
 
     private void Update()
     {
+        if (playerHealth.isTakingDamage)
+        {
+            return;
+        }
+
         if (movementController.isDashing || (movementController.isJumping))
         {
             return;

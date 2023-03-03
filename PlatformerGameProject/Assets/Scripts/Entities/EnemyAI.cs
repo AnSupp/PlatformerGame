@@ -6,6 +6,7 @@ using Pathfinding;
 public class EnemyAI : MonoBehaviour
 {
     private EnemyCombat enemyCombat;
+    private EnemyHealth enemyHealth;
 
     [Header("Pathfinding")]
     [SerializeField] private Transform target;
@@ -39,18 +40,27 @@ public class EnemyAI : MonoBehaviour
         Gizmos.DrawWireSphere(transform.position, attackDistance);
     }
 
-    public void Start()
+    private void Awake()
     {
         enemyCombat = GetComponent<EnemyCombat>();
         seeker = GetComponent<Seeker>();
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
+        enemyHealth = GetComponent<EnemyHealth>();
+    }
 
+    private void Start()
+    {
         InvokeRepeating("UpdatePath", 0f, pathUpdateSeconds);
     }
 
     private void FixedUpdate()
     {
+        if (enemyHealth.isTakingDamage)
+        {
+            return;
+        }
+
         if (enemyCombat.isAttacking)
         {
             return;

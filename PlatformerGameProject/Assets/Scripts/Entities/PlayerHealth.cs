@@ -20,8 +20,6 @@ public class PlayerHealth : EntityHealth
 
     protected override void Die()
     {
-        GetComponent<BoxCollider2D>().enabled = false;
-        GetComponent<CircleCollider2D>().enabled = false;
         GetComponent<PlayerMovementController>().enabled = false;
         playerCombat.enabled = false;
         base.Die();
