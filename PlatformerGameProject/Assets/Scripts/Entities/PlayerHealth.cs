@@ -5,6 +5,7 @@ using UnityEngine;
 public class PlayerHealth : EntityHealth
 {
     private PlayerCombat playerCombat;
+    [SerializeField] private GameObject bloodPoint;
 
     protected override void Awake()
     {
@@ -15,6 +16,7 @@ public class PlayerHealth : EntityHealth
     public override void TakeDamage(int damage)
     {
         playerCombat.isAttacking = false;
+        bloodPoint.GetComponent<Animator>().Play("BloodAnimation");
         base.TakeDamage(damage);
     }
 
