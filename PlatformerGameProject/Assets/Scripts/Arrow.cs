@@ -22,10 +22,10 @@ public class Arrow : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        Entity entity = other.gameObject.GetComponent<Entity>();
-        if (entity != null)
+        EnemyHealth enemy = other.gameObject.GetComponent<EnemyHealth>();
+        if (enemy != null)
         {
-            entity.TakeDamage(arrowDamage);
+            enemy.TakeDamage(arrowDamage);
             Destroy(gameObject);
         }
 

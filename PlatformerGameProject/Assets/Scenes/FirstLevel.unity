@@ -679,8 +679,8 @@ GameObject:
   - component: {fileID: 137127339}
   - component: {fileID: 137127338}
   - component: {fileID: 137127342}
-  - component: {fileID: 137127340}
   - component: {fileID: 137127341}
+  - component: {fileID: 137127340}
   m_Layer: 3
   m_Name: Player
   m_TagString: Player
@@ -850,16 +850,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fdeb594b1cca5d34f9959eadcb82f0c4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyLayer:
+  hitLayer:
     serializedVersion: 2
     m_Bits: 512
-  arrowPrefab: {fileID: 6757577515133711580, guid: dfb49bffa49d71c4ebbff9ddf10228f3, type: 3}
   isAttacking: 0
-  lightATKDamage: 10
-  lightATKCooldown: 0.85
-  lightAttackPoint: {fileID: 1241764113}
-  lightAttackRange: 0.133
-  bowATKDamage: 25
+  ATKDamage: 0
+  ATKCooldown: 0.85
+  attackPoint: {fileID: 1241764113}
+  attackRange: 0.133
+  canAttack: 1
+  arrowPrefab: {fileID: 6757577515133711580, guid: dfb49bffa49d71c4ebbff9ddf10228f3, type: 3}
+  bowATKDamage: 0
   bowATKCooldown: 2
   bowAttackPoint: {fileID: 312029210}
 --- !u!114 &137127341
@@ -871,10 +872,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 137127333}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c544ff081d2560948861bf15f9b795fc, type: 3}
+  m_Script: {fileID: 11500000, guid: 8726d1fd61c697c4d89cee581f068467, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 10000
+  maxHealth: 20
 --- !u!114 &137127342
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2766,7 +2767,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &561846922
 GameObject:
@@ -13395,8 +13396,8 @@ GameObject:
   - component: {fileID: 1364920420}
   - component: {fileID: 1364920419}
   - component: {fileID: 1364920423}
-  - component: {fileID: 1364920421}
   - component: {fileID: 1364920422}
+  - component: {fileID: 1364920421}
   - component: {fileID: 1364920424}
   m_Layer: 9
   m_Name: SlimeEnemy
@@ -13488,7 +13489,7 @@ Transform:
   m_Children:
   - {fileID: 1036197175}
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &1364920419
 BoxCollider2D:
@@ -13546,10 +13547,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1364920415}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c544ff081d2560948861bf15f9b795fc, type: 3}
+  m_Script: {fileID: 11500000, guid: 7ae7666a00ceef74fa7005ec3eaf58a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 50
+  maxHealth: 1
 --- !u!114 &1364920422
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13614,7 +13615,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 85883aaad5e96d849bc9f2276f644cfb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerLayer:
+  hitLayer:
     serializedVersion: 2
     m_Bits: 8
   isAttacking: 0
@@ -19836,7 +19837,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 5258323394247282545, guid: 245e09adbf392d64c942a6593e6de1ec, type: 3}
       propertyPath: m_RootOrder
-      value: 11
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 5258323394247282545, guid: 245e09adbf392d64c942a6593e6de1ec, type: 3}
       propertyPath: m_LocalPosition.x

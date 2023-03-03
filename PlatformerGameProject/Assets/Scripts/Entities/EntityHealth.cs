@@ -2,42 +2,42 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Entity : MonoBehaviour
+public abstract class EntityHealth : MonoBehaviour
 {
+    protected Animator animator;
+
     public int maxHealth;
-    private int currentHealth;
+    protected int currentHealth;
 
-    private Animator entityAnimator;
-
-    private void Awake()
+    protected virtual void Awake()
     {
-        entityAnimator = GetComponent<Animator>();
+        animator = GetComponent<Animator>();
     }
 
     private void Start()
     {
         currentHealth = maxHealth;
     }
-    public void TakeDamage(int damage)
+
+    public virtual void TakeDamage(int damage)
     {
         currentHealth -= damage;
-        entityAnimator.SetTrigger("Hurt");
+        animator.SetTrigger("Hurt");
 
         if (currentHealth <= 0)
         {
             Die();
         }
     }
-
-    private void Die()
+    protected virtual void Die()
     {
-        entityAnimator.SetBool("Dead", true);
+        animator.SetBool("Dead", true);
 
         GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezePositionY;
         GetComponent<Collider2D>().enabled = false;
-        GetComponent<EnemyAI>().enabled = false;
 
         this.enabled = false;
     }
 }
+
 
