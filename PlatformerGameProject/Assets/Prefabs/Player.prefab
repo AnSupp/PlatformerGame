@@ -271,9 +271,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8726d1fd61c697c4d89cee581f068467, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 100
+  maxHealth: 80
   isTakingDamage: 0
   bloodPoint: {fileID: 6850740244123082499}
+  healthBar: {fileID: 0}
+  HitEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1023978565256154253}
+        m_TargetAssemblyTypeName: UnityEngine.Animator, UnityEngine
+        m_MethodName: Play
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: BloodAnimation
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &4018579648379419165
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -290,13 +306,13 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 512
   isAttacking: 0
-  ATKDamage: 0
+  ATKDamage: 10
   ATKCooldown: 0.85
   attackPoint: {fileID: 4018579649422118560}
   attackRange: 0.133
   canAttack: 1
   arrowPrefab: {fileID: 6757577515133711580, guid: dfb49bffa49d71c4ebbff9ddf10228f3, type: 3}
-  bowATKDamage: 0
+  bowATKDamage: 15
   bowATKCooldown: 2
   bowAttackPoint: {fileID: 4018579647954530219}
 --- !u!1 &4018579649422118561

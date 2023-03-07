@@ -4,31 +4,31 @@ TextureImporter:
   internalIDToNameTable:
   - first:
       213: 5854723316995616251
-    second: wolfsheet_1
+    second: wolfsheet2_6
   - first:
       213: 3322933202377027184
-    second: wolfsheet_2
+    second: wolfsheet2_7
   - first:
       213: -5782347536453510009
-    second: wolfsheet_3
+    second: wolfsheet2_8
   - first:
       213: -8740061766405323441
-    second: wolfsheet_4
+    second: wolfsheet2_9
   - first:
       213: -7105306652008785269
-    second: wolfsheet_5
+    second: wolfsheet2_18
   - first:
       213: 1319242517513340047
-    second: wolfsheet_6
+    second: wolfsheet2_19
   - first:
       213: -5064511709138803551
-    second: wolfsheet_7
+    second: wolfsheet2_20
   - first:
       213: 6143246065102865153
-    second: wolfsheet_8
+    second: wolfsheet2_21
   - first:
       213: 5490597791593228715
-    second: wolfsheet_9
+    second: wolfsheet2_22
   - first:
       213: -2480087305450778363
     second: wolfsheet_10
@@ -58,19 +58,46 @@ TextureImporter:
     second: wolfsheet_21
   - first:
       213: 4630318336364481173
-    second: wolfsheet_11
+    second: wolfsheet2_0
   - first:
       213: -3329740781989712029
-    second: wolfsheet_16
+    second: wolfsheet2_1
   - first:
       213: 2316919647781492859
-    second: wolfsheet_17
+    second: wolfsheet2_2
   - first:
       213: -8836007917978470703
-    second: wolfsheet_22
+    second: wolfsheet2_3
   - first:
       213: 2907483651843985051
-    second: wolfsheet_23
+    second: wolfsheet2_4
+  - first:
+      213: -3260337467881717503
+    second: wolfsheet2_5
+  - first:
+      213: 1821175152271298767
+    second: wolfsheet2_10
+  - first:
+      213: -2932809921081907869
+    second: wolfsheet2_11
+  - first:
+      213: 514250756131936640
+    second: wolfsheet2_12
+  - first:
+      213: 6354728178870315967
+    second: wolfsheet2_13
+  - first:
+      213: 7867892989679147265
+    second: wolfsheet2_14
+  - first:
+      213: 5964602146838240597
+    second: wolfsheet2_15
+  - first:
+      213: -4656550268681996822
+    second: wolfsheet2_16
+  - first:
+      213: 4976454893103579422
+    second: wolfsheet2_17
   externalObjects: {}
   serializedVersion: 12
   mipmaps:
@@ -173,13 +200,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: wolfsheet_1
+      name: wolfsheet2_6
       rect:
         serializedVersion: 2
-        x: 320
-        y: 352
+        x: 179
+        y: 179
         width: 63
-        height: 31
+        height: 41
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -194,13 +221,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: wolfsheet_2
+      name: wolfsheet2_7
       rect:
         serializedVersion: 2
-        x: 384
-        y: 352
-        width: 63
-        height: 28
+        x: 263
+        y: 179
+        width: 61
+        height: 41
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -215,13 +242,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: wolfsheet_3
+      name: wolfsheet2_8
       rect:
         serializedVersion: 2
-        x: 449
-        y: 352
-        width: 61
-        height: 25
+        x: 19
+        y: 128
+        width: 63
+        height: 31
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -236,13 +263,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: wolfsheet_4
+      name: wolfsheet2_9
       rect:
         serializedVersion: 2
-        x: 514
-        y: 352
-        width: 60
-        height: 21
+        x: 97
+        y: 128
+        width: 64
+        height: 31
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -257,12 +284,12 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: wolfsheet_5
+      name: wolfsheet2_18
       rect:
         serializedVersion: 2
-        x: 319
-        y: 289
-        width: 63
+        x: 17
+        y: 19
+        width: 62
         height: 31
       alignment: 7
       pivot: {x: 0.5, y: 0}
@@ -278,13 +305,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: wolfsheet_6
+      name: wolfsheet2_19
       rect:
         serializedVersion: 2
-        x: 384
-        y: 288
-        width: 64
-        height: 37
+        x: 98
+        y: 19
+        width: 60
+        height: 31
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -299,13 +326,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: wolfsheet_7
+      name: wolfsheet2_20
       rect:
         serializedVersion: 2
-        x: 448
-        y: 288
-        width: 64
-        height: 41
+        x: 176
+        y: 19
+        width: 63
+        height: 32
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -320,13 +347,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: wolfsheet_8
+      name: wolfsheet2_21
       rect:
         serializedVersion: 2
-        x: 513
-        y: 288
-        width: 61
-        height: 41
+        x: 258
+        y: 19
+        width: 64
+        height: 31
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -341,11 +368,11 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: wolfsheet_9
+      name: wolfsheet2_22
       rect:
         serializedVersion: 2
-        x: 320
-        y: 256
+        x: 353
+        y: 19
         width: 63
         height: 31
       alignment: 7
@@ -362,202 +389,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: wolfsheet_10
+      name: wolfsheet2_0
       rect:
         serializedVersion: 2
-        x: 384
-        y: 256
-        width: 64
-        height: 31
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 50196aa5cb5f49dd0800000000000000
-      internalID: -2480087305450778363
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: wolfsheet_12
-      rect:
-        serializedVersion: 2
-        x: 512
-        y: 256
-        width: 64
-        height: 31
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 63d617b6ac479ff50800000000000000
-      internalID: 6915687115538918710
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: wolfsheet_13
-      rect:
-        serializedVersion: 2
-        x: 577
-        y: 256
-        width: 63
-        height: 32
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 051c799527a019640800000000000000
-      internalID: 5084856940523667792
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: wolfsheet_14
-      rect:
-        serializedVersion: 2
-        x: 320
-        y: 224
-        width: 63
-        height: 30
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 328b11ff2ff438310800000000000000
-      internalID: 1406055413749757987
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: wolfsheet_15
-      rect:
-        serializedVersion: 2
-        x: 387
-        y: 224
-        width: 60
-        height: 29
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b1739d903e6bf3e60800000000000000
-      internalID: 7944269353943906075
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: wolfsheet_18
-      rect:
-        serializedVersion: 2
-        x: 576
-        y: 224
-        width: 63
-        height: 32
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7fd3f3134a8b18440800000000000000
-      internalID: 4936429681915149815
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: wolfsheet_19
-      rect:
-        serializedVersion: 2
-        x: 320
-        y: 192
+        x: 19
+        y: 243
         width: 63
         height: 31
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5952a7c3bd9de1370800000000000000
-      internalID: 8295307099298735509
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: wolfsheet_20
-      rect:
-        serializedVersion: 2
-        x: 385
-        y: 192
-        width: 60
-        height: 31
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6d2d60178f155daf0800000000000000
-      internalID: -372301266698186026
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: wolfsheet_21
-      rect:
-        serializedVersion: 2
-        x: 448
-        y: 192
-        width: 64
-        height: 32
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6d71a328f3fc4c5f0800000000000000
-      internalID: -737236567307184170
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: wolfsheet_11
-      rect:
-        serializedVersion: 2
-        x: 448
-        y: 256
-        width: 64
-        height: 32
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -572,13 +410,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: wolfsheet_16
+      name: wolfsheet2_1
       rect:
         serializedVersion: 2
-        x: 448
-        y: 224
+        x: 94
+        y: 243
         width: 63
-        height: 32
+        height: 28
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -593,13 +431,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: wolfsheet_17
+      name: wolfsheet2_2
       rect:
         serializedVersion: 2
-        x: 512
-        y: 224
-        width: 63
-        height: 32
+        x: 175
+        y: 243
+        width: 61
+        height: 25
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -614,13 +452,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: wolfsheet_22
+      name: wolfsheet2_3
       rect:
         serializedVersion: 2
-        x: 512
-        y: 192
-        width: 64
-        height: 31
+        x: 263
+        y: 243
+        width: 60
+        height: 21
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -635,11 +473,11 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: wolfsheet_23
+      name: wolfsheet2_4
       rect:
         serializedVersion: 2
-        x: 576
-        y: 192
+        x: 19
+        y: 179
         width: 63
         height: 31
       alignment: 7
@@ -651,6 +489,195 @@ TextureImporter:
       bones: []
       spriteID: b9e8a621af4795820800000000000000
       internalID: 2907483651843985051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wolfsheet2_5
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 179
+        width: 65
+        height: 37
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1018303d854f0c2d0800000000000000
+      internalID: -3260337467881717503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wolfsheet2_10
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 128
+        width: 64
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc016e8e62d164910800000000000000
+      internalID: 1821175152271298767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wolfsheet2_11
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 128
+        width: 64
+        height: 31
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 365eb2c5ae09c47d0800000000000000
+      internalID: -2932809921081907869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wolfsheet2_12
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 128
+        width: 63
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08958bc865cf22700800000000000000
+      internalID: 514250756131936640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wolfsheet2_13
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 83
+        width: 63
+        height: 30
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fbbeab12c97803850800000000000000
+      internalID: 6354728178870315967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wolfsheet2_14
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 83
+        width: 60
+        height: 29
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1099c9cfcfe503d60800000000000000
+      internalID: 7867892989679147265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wolfsheet2_15
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 83
+        width: 63
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55d53dcfc0686c250800000000000000
+      internalID: 5964602146838240597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wolfsheet2_16
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 83
+        width: 61
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae5b57cb33c906fb0800000000000000
+      internalID: -4656550268681996822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wolfsheet2_17
+      rect:
+        serializedVersion: 2
+        x: 353
+        y: 83
+        width: 63
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e118130eb5bef0540800000000000000
+      internalID: 4976454893103579422
       vertices: []
       indices: 
       edges: []

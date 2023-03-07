@@ -1,11 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using UnityEngine.EventSystems;
+using UnityEngine.Events;
 
 public class PlayerHealth : EntityHealth
 {
     private PlayerCombat playerCombat;
-    [SerializeField] private GameObject bloodPoint;
+    [SerializeField] private PlayerHealthBar healthBar;
+    [SerializeField] private UnityEvent HitEvent;
 
     protected override void Awake()
     {
@@ -16,8 +20,10 @@ public class PlayerHealth : EntityHealth
     public override void TakeDamage(int damage)
     {
         playerCombat.isAttacking = false;
-        bloodPoint.GetComponent<Animator>().Play("BloodAnimation");
+        HitEvent.Invoke();
+
         base.TakeDamage(damage);
+        healthBar.SetHealth(currentHealth);
     }
 
     protected override void Die()

@@ -220,7 +220,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ae7666a00ceef74fa7005ec3eaf58a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 1
+  maxHealth: 25
   isTakingDamage: 0
 --- !u!114 &8224817202172615785
 MonoBehaviour:
@@ -238,7 +238,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 8
   isAttacking: 0
-  ATKDamage: 1
+  ATKDamage: 5
   ATKCooldown: 2
   attackPoint: {fileID: 8224817203591858486}
   attackRange: 0.1
