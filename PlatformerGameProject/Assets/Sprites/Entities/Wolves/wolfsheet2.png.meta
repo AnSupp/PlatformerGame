@@ -308,9 +308,9 @@ TextureImporter:
       name: wolfsheet2_19
       rect:
         serializedVersion: 2
-        x: 98
+        x: 96
         y: 19
-        width: 60
+        width: 62
         height: 31
       alignment: 7
       pivot: {x: 0.5, y: 0}
@@ -331,11 +331,11 @@ TextureImporter:
         serializedVersion: 2
         x: 176
         y: 19
-        width: 63
+        width: 82
         height: 32
       alignment: 7
       pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 0, y: 0, z: 19, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -352,11 +352,11 @@ TextureImporter:
         serializedVersion: 2
         x: 258
         y: 19
-        width: 64
+        width: 76
         height: 31
       alignment: 7
       pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 0, y: 0, z: 12, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -373,7 +373,7 @@ TextureImporter:
         serializedVersion: 2
         x: 353
         y: 19
-        width: 63
+        width: 70
         height: 31
       alignment: 7
       pivot: {x: 0.5, y: 0}

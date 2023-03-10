@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: HowlAnimation
+  m_Name: DieAnimation
   serializedVersion: 6
   m_Legacy: 0
   m_Compressed: 0
@@ -20,18 +20,14 @@ AnimationClip:
   m_PPtrCurves:
   - curve:
     - time: 0
-      value: {fileID: 2907483651843985051, guid: 07ac2c8de058c464cbca184baa0cbc3f, type: 3}
-    - time: 0.125
-      value: {fileID: -3260337467881717503, guid: 07ac2c8de058c464cbca184baa0cbc3f, type: 3}
-    - time: 0.25
-      value: {fileID: 5854723316995616251, guid: 07ac2c8de058c464cbca184baa0cbc3f, type: 3}
-    - time: 0.375
-      value: {fileID: 3322933202377027184, guid: 07ac2c8de058c464cbca184baa0cbc3f, type: 3}
+      value: {fileID: 2316919647781492859, guid: 07ac2c8de058c464cbca184baa0cbc3f, type: 3}
+    - time: 0.083333336
+      value: {fileID: -8836007917978470703, guid: 07ac2c8de058c464cbca184baa0cbc3f, type: 3}
     attribute: m_Sprite
     path: 
     classID: 212
     script: {fileID: 0}
-  m_SampleRate: 8
+  m_SampleRate: 12
   m_WrapMode: 0
   m_Bounds:
     m_Center: {x: 0, y: 0, z: 0}
@@ -46,16 +42,14 @@ AnimationClip:
       customType: 23
       isPPtrCurve: 1
     pptrCurveMapping:
-    - {fileID: 2907483651843985051, guid: 07ac2c8de058c464cbca184baa0cbc3f, type: 3}
-    - {fileID: -3260337467881717503, guid: 07ac2c8de058c464cbca184baa0cbc3f, type: 3}
-    - {fileID: 5854723316995616251, guid: 07ac2c8de058c464cbca184baa0cbc3f, type: 3}
-    - {fileID: 3322933202377027184, guid: 07ac2c8de058c464cbca184baa0cbc3f, type: 3}
+    - {fileID: 2316919647781492859, guid: 07ac2c8de058c464cbca184baa0cbc3f, type: 3}
+    - {fileID: -8836007917978470703, guid: 07ac2c8de058c464cbca184baa0cbc3f, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 0.5
+    m_StopTime: 0.16666667
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
