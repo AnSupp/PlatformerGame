@@ -273,7 +273,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 80
   isTakingDamage: 0
-  bloodPoint: {fileID: 6850740244123082499}
   healthBar: {fileID: 0}
   HitEvent:
     m_PersistentCalls:

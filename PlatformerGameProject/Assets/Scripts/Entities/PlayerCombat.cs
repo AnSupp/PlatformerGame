@@ -14,6 +14,9 @@ public class PlayerCombat : EntityCombat
     [SerializeField] private Transform bowAttackPoint;
     private bool canBowAttack = true;
 
+
+    private int lightAttackCombo = 0;
+
     protected override void Awake()
     {
         base.Awake();
@@ -51,12 +54,39 @@ public class PlayerCombat : EntityCombat
         {
             StartCoroutine(Attack());
         }
-
-        if (Input.GetButtonDown("BowAttack") && canBowAttack)
+        else if (Input.GetButtonDown("BowAttack") && canBowAttack)
         {
             StartCoroutine(BowAttack());
         }
 
+    }
+
+    protected  IEnumerator LightAttack()
+    {
+        isAttacking = true;
+        canAttack = false;
+
+        switch (lightAttackCombo)
+        {
+            case 0:
+                animator.SetTrigger("LightAttack1");
+                lightAttackCombo++;
+                break;
+            case 1:
+                animator.SetTrigger("LightAttack2");
+                lightAttackCombo++;
+                break;
+            case 2:
+                animator.SetTrigger("LightAttack3");
+                lightAttackCombo = 0;
+                break;
+            default:
+                lightAttackCombo = 0;
+                break;
+        }
+
+        yield return new WaitForSeconds(0.2f);
+        canAttack = true;
     }
 
     private IEnumerator BowAttack()

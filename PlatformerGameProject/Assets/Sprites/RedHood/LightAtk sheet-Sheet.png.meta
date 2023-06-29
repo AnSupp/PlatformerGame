@@ -355,11 +355,11 @@ TextureImporter:
         serializedVersion: 2
         x: 665
         y: 21
-        width: 24
+        width: 35
         height: 33
       alignment: 7
       pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 0, y: 0, z: 11, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -374,13 +374,13 @@ TextureImporter:
       name: itch light atk sheet-Sheet_9
       rect:
         serializedVersion: 2
-        x: 740
+        x: 739
         y: 21
-        width: 44
+        width: 45
         height: 31
       alignment: 7
       pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 1, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -418,11 +418,11 @@ TextureImporter:
         serializedVersion: 2
         x: 897
         y: 21
-        width: 28
+        width: 47
         height: 27
       alignment: 7
       pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 0, y: 0, z: 19, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -439,11 +439,11 @@ TextureImporter:
         serializedVersion: 2
         x: 980
         y: 21
-        width: 25
+        width: 42
         height: 29
       alignment: 7
       pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 0, y: 0, z: 17, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -460,11 +460,11 @@ TextureImporter:
         serializedVersion: 2
         x: 1064
         y: 21
-        width: 19
+        width: 28
         height: 29
       alignment: 7
       pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 0, y: 0, z: 9, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -481,11 +481,11 @@ TextureImporter:
         serializedVersion: 2
         x: 1146
         y: 21
-        width: 17
+        width: 22
         height: 30
       alignment: 7
       pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 0, y: 0, z: 5, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -521,9 +521,9 @@ TextureImporter:
       name: itch light atk sheet-Sheet_16
       rect:
         serializedVersion: 2
-        x: 1297
+        x: 1295
         y: 21
-        width: 44
+        width: 46
         height: 33
       alignment: 7
       pivot: {x: 0.5, y: 0}
@@ -542,13 +542,13 @@ TextureImporter:
       name: itch light atk sheet-Sheet_17
       rect:
         serializedVersion: 2
-        x: 1376
+        x: 1372
         y: 21
-        width: 44
+        width: 48
         height: 30
       alignment: 7
       pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 4, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -565,11 +565,11 @@ TextureImporter:
         serializedVersion: 2
         x: 1455
         y: 21
-        width: 30
+        width: 40
         height: 22
       alignment: 7
       pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 0, y: 0, z: 10, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -586,11 +586,11 @@ TextureImporter:
         serializedVersion: 2
         x: 1535
         y: 21
-        width: 30
+        width: 40
         height: 21
       alignment: 7
       pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 0, y: 0, z: 10, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -607,11 +607,11 @@ TextureImporter:
         serializedVersion: 2
         x: 1615
         y: 21
-        width: 30
+        width: 40
         height: 21
       alignment: 7
       pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 0, y: 0, z: 10, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -628,11 +628,11 @@ TextureImporter:
         serializedVersion: 2
         x: 1695
         y: 21
-        width: 30
+        width: 40
         height: 21
       alignment: 7
       pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 0, y: 0, z: 10, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -649,11 +649,11 @@ TextureImporter:
         serializedVersion: 2
         x: 1779
         y: 21
-        width: 24
+        width: 28
         height: 21
       alignment: 7
       pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 0, y: 0, z: 4, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -670,11 +670,11 @@ TextureImporter:
         serializedVersion: 2
         x: 1860
         y: 21
-        width: 19
+        width: 22
         height: 24
       alignment: 7
       pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 0, y: 0, z: 3, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -691,11 +691,11 @@ TextureImporter:
         serializedVersion: 2
         x: 1940
         y: 21
-        width: 17
+        width: 22
         height: 25
       alignment: 7
       pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 0, y: 0, z: 5, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
