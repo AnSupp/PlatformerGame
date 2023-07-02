@@ -4,10 +4,15 @@ using UnityEngine;
 
 public class PlayerInAirState : PlayerState
 {
-    private bool isGrounded;
     private int xInput;
     private bool jumpInput;
+    private bool grabInput;
+
     private bool coyoteTime;
+
+    private bool isGrounded;
+    private bool isTouchingWall;
+
     public PlayerInAirState(Player player, PlayerStateMachine stateMachine, PlayerData playerData, string animBoolName) : base(player, stateMachine, playerData, animBoolName)
     {
     }
@@ -17,6 +22,7 @@ public class PlayerInAirState : PlayerState
         base.DoChecks();
 
         isGrounded = player.CheckGround();
+        isTouchingWall = player.CheckWall();
     }
 
     public override void EnterState()
@@ -36,6 +42,7 @@ public class PlayerInAirState : PlayerState
         StartCoyoteTime();
         xInput = player.InputHandler.NormalizedInputX;
         jumpInput = player.InputHandler.JumpInput;
+        grabInput = player.InputHandler.GrabInput;
 
         if (isGrounded && player.CurrentVelocity.y < 0.01f)
         {
@@ -43,7 +50,16 @@ public class PlayerInAirState : PlayerState
         }
         else if (jumpInput && player.JumpState.CanJump())
         {
+            //player.InputHandler.UseJumpInput();
             stateMachine.ChangeState(player.JumpState);
+        }
+        else if(isTouchingWall && grabInput)
+        {
+            stateMachine.ChangeState(player.WallGrabState);
+        }
+        else if (isTouchingWall && xInput == player.FacingDirection && player.CurrentVelocity.y <= 0)
+        {
+            stateMachine.ChangeState(player.WallSlideState);
         }
         else
         {

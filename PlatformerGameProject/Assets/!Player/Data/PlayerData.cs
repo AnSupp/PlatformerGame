@@ -15,7 +15,11 @@ public class PlayerData : ScriptableObject
     [Header("In Air State Vars")]
     public float coyoteTime = 0.2f;
 
+    [Header("Wall Slide State")]
+    public float wallSlideVelocity = 0.1f;
+
     [Header("Check Vars")]
     public float groundCheckRadius = 0.057f;
     public LayerMask whatIsGround;
+    public float wallCheckDistance = 0.5f;
 }
