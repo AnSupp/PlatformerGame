@@ -14,6 +14,7 @@ public class PlayerState
     private string animBoolName;
 
     protected bool isAnimationFinished;
+    protected bool isExitingState;
 
     public PlayerState(Player player, PlayerStateMachine stateMachine, PlayerData playerData, string animBoolName)
     {
@@ -29,13 +30,13 @@ public class PlayerState
         player.PlayerAnimator.SetBool(animBoolName, true);
         startTime = Time.time;
         isAnimationFinished = false;
-
-        Debug.Log("CurrentState:  " + stateMachine.CurrentState);
+        isExitingState = false;
     }
 
     public virtual void ExitState()
     {
         player.PlayerAnimator.SetBool(animBoolName, false);
+        isExitingState = true;
     }
 
     public virtual void LogicUpdate()

@@ -13,6 +13,7 @@ public class Player : MonoBehaviour
     public PlayerLandState LandState { get; private set;  }
     public PlayerWallSlideState WallSlideState { get; private set; }
     public PlayerWallGrabState WallGrabState { get; private set; }
+    public PlayerWallJumpState WallJumpState { get; private set; }
 
     [SerializeField] private PlayerData playerData;
     #endregion
@@ -43,6 +44,7 @@ public class Player : MonoBehaviour
         LandState = new PlayerLandState(this, StateMachine, playerData, "land");
         WallSlideState = new PlayerWallSlideState(this, StateMachine, playerData, "wallSlide");
         WallGrabState = new PlayerWallGrabState(this, StateMachine, playerData, "wallGrab");
+        WallJumpState = new PlayerWallJumpState(this, StateMachine, playerData, "inAir");
     }
 
     private void Start()
@@ -79,6 +81,14 @@ public class Player : MonoBehaviour
         CurrentVelocity = tempVector2;
     }
 
+    public void SetVelocityWallJump(float velocity, Vector2 angle, int direction)
+    {
+        angle.Normalize();
+        tempVector2.Set(angle.x * velocity * direction, angle.y * velocity);
+        PlayerRigidbody.velocity = tempVector2;
+        CurrentVelocity = tempVector2;
+    }
+
     #region Check Functions
     public void CheckFlip(int xInput)
     {
@@ -96,6 +106,11 @@ public class Player : MonoBehaviour
     public bool CheckWall()
     {
         return Physics2D.Raycast(wallChecker.position, Vector2.right * FacingDirection, playerData.wallCheckDistance, playerData.whatIsGround);
+    }
+
+    public bool CheckWallBack()
+    {
+        return Physics2D.Raycast(wallChecker.position, Vector2.right * -FacingDirection, playerData.wallCheckDistance, playerData.whatIsGround);
     }
     #endregion
 
