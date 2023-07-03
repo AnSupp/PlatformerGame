@@ -15,10 +15,13 @@ MonoBehaviour:
   movementVelocity: 0.8
   jumpVelocity: 3
   amountOfJumps: 1
+  wallJumpVelocity: 3
+  wallJumpTime: 0.4
+  wallJumpAngle: {x: 1, y: 2}
   coyoteTime: 0.2
   wallSlideVelocity: 0.1
   groundCheckRadius: 0.05
   whatIsGround:
     serializedVersion: 2
     m_Bits: 320
-  wallCheckDistance: 0.1
+  wallCheckDistance: 0.12

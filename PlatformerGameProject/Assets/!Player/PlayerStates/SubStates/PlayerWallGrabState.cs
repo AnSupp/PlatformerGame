@@ -41,11 +41,13 @@ public class PlayerWallGrabState : PlayerTouchingWallState
     {
         base.LogicUpdate();
 
-        HoldPosition();
-
-        if (!grabInput && !isExitingState)
+        if (!isExitingState)
         {
-            stateMachine.ChangeState(player.WallSlideState);
+            HoldPosition();
+            if (!grabInput)
+            {
+                stateMachine.ChangeState(player.WallSlideState);
+            } 
         }
     }
 

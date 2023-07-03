@@ -41,7 +41,7 @@ public class PlayerInAirState : PlayerState
     {
         base.LogicUpdate();
 
-        StartCoyoteTime();
+        CheckCoyotetime();
         xInput = player.InputHandler.NormalizedInputX;
         jumpInput = player.InputHandler.JumpInput;
         grabInput = player.InputHandler.GrabInput;
@@ -52,12 +52,12 @@ public class PlayerInAirState : PlayerState
         }
         else if (jumpInput && (isTouchingWall || isTouchingWallBack))
         {
+            isTouchingWall = player.CheckWall();
             player.WallJumpState.DetermineWallJumpDirection(isTouchingWall);
             stateMachine.ChangeState(player.WallJumpState);
         }
         else if (jumpInput && player.JumpState.CanJump())
         {
-            player.InputHandler.UseJumpInput();
             stateMachine.ChangeState(player.JumpState);
         }
         else if(isTouchingWall && grabInput)
@@ -82,7 +82,7 @@ public class PlayerInAirState : PlayerState
         base.PhysicsUpdate();
     }
 
-    private void CheckCoyoteztime()
+    private void CheckCoyotetime()
     {
         if (coyoteTime && Time.time > startTime + playerData.coyoteTime)
         {
