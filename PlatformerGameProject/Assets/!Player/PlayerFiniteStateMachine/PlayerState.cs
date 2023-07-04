@@ -31,6 +31,8 @@ public class PlayerState
         startTime = Time.time;
         isAnimationFinished = false;
         isExitingState = false;
+
+        Debug.Log("Current state:  " + stateMachine.CurrentState);
     }
 
     public virtual void ExitState()
