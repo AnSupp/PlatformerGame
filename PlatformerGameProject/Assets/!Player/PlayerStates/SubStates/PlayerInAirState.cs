@@ -73,6 +73,7 @@ public class PlayerInAirState : PlayerState
             player.CheckFlip(xInput);
             player.SetVelocityX(playerData.movementVelocity * xInput);
 
+            player.PlayerAnimator.SetFloat("xVelocity", Mathf.Abs(player.CurrentVelocity.x));
             player.PlayerAnimator.SetFloat("yVelocity", player.CurrentVelocity.y);
         }
     }
