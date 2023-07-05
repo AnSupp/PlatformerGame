@@ -263,6 +263,9 @@ TextureImporter:
   - first:
       213: 8210017092983076200
     second: red hood Sheet_2
+  - first:
+      213: -2299821197502809530
+    second: red hood Sheet_3
   externalObjects: {}
   serializedVersion: 12
   mipmaps:
@@ -2187,6 +2190,27 @@ TextureImporter:
       bones: []
       spriteID: 865342b2c07dfe170800000000000000
       internalID: 8210017092983076200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: red hood Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 1165
+        y: 1366
+        width: 15
+        height: 29
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64a7eeb4ec46510e0800000000000000
+      internalID: -2299821197502809530
       vertices: []
       indices: 
       edges: []

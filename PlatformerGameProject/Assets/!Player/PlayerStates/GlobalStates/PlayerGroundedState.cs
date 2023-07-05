@@ -7,6 +7,7 @@ public class PlayerGroundedState : PlayerState
 {
     protected int xInput;
     private bool jumpInput;
+    //private bool dashInput;
 
     private bool isGrounded;
     public PlayerGroundedState(Player player, PlayerStateMachine stateMachine, PlayerData playerData, string animBoolName) : base(player, stateMachine, playerData, animBoolName)
@@ -37,11 +38,16 @@ public class PlayerGroundedState : PlayerState
         //считываем ввод
         xInput = player.InputHandler.NormalizedInputX;
         jumpInput = player.InputHandler.JumpInput;
+        //dashInput = player.InputHandler.DashInput;
 
         if (jumpInput && player.JumpState.CanJump())
         {
             stateMachine.ChangeState(player.JumpState);
         }
+        //if (dashInput)
+        //{
+        //    stateMachine.ChangeState(player.DashState);
+        //}
         else if (!isGrounded)
         {
             player.InAirState.StartCoyoteTime();

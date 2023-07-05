@@ -18,10 +18,11 @@ MonoBehaviour:
   wallJumpVelocity: 3
   wallJumpTime: 0.4
   wallJumpAngle: {x: 1, y: 2}
+  dashVelocity: 3
   coyoteTime: 0.2
   wallSlideVelocity: 0.1
   groundCheckRadius: 0.05
   whatIsGround:
     serializedVersion: 2
     m_Bits: 320
-  wallCheckDistance: 0.12
+  wallCheckDistance: 0.1

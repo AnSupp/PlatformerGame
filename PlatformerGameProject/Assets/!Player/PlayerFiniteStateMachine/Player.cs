@@ -93,7 +93,7 @@ public class Player : MonoBehaviour
 
     public void SetVelocityDash(float velocity)
     {
-        tempVector2.Set(velocity, CurrentVelocity.y);
+        tempVector2.Set(velocity * this.FacingDirection, CurrentVelocity.y);
         PlayerRigidbody.velocity = tempVector2;
         CurrentVelocity = tempVector2;
     }
