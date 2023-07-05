@@ -254,6 +254,15 @@ TextureImporter:
   - first:
       213: 1964913018551566718
     second: red hood Sheet_126
+  - first:
+      213: 7637883276740567379
+    second: red hood Sheet_0
+  - first:
+      213: 9169269756675119023
+    second: red hood Sheet_1
+  - first:
+      213: 8210017092983076200
+    second: red hood Sheet_2
   externalObjects: {}
   serializedVersion: 12
   mipmaps:
@@ -2115,6 +2124,69 @@ TextureImporter:
       bones: []
       spriteID: e718e45daf5c44b10800000000000000
       internalID: 1964913018551566718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: red hood Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 1233
+        width: 23
+        height: 31
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 351a40a7f563ff960800000000000000
+      internalID: 7637883276740567379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: red hood Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 1234
+        width: 24
+        height: 34
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa75a58434acf3f70800000000000000
+      internalID: 9169269756675119023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: red hood Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 286
+        y: 1236
+        width: 23
+        height: 31
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 865342b2c07dfe170800000000000000
+      internalID: 8210017092983076200
       vertices: []
       indices: 
       edges: []
